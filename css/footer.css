@@ -1,0 +1,27 @@
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20;
+  margin-bottom: 0;
+}
+
+.endSection {
+  width: 100%;
+  margin: 0;
+  background-color: #F1F1F1;
+  display: ;
+  overflow: hidden;
+}
+
+.footerMediaLinksContainer {
+  text-align: center;
+}
+
+.copyRight {
+  font-family: RalewayItalic;
+  text-align: center;
+}
+
+.footerMediaImage {
+  width: 30px;
+}

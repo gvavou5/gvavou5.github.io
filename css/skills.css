@@ -1,0 +1,49 @@
+.skillsHeader {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 5;
+}
+/* Create four equal columns that floats next to each other */
+.gridRow {
+  margin: 0% 5% 0% 5%;
+}
+.gridColumn {
+  float: left;
+  width: 16.66%;
+}
+
+/* Clear floats after rows */
+.gridRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.gridContent {
+  font-family: RalewayBold;
+  color: #424040;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*@media screen and (max-width: 900px) {
+  .gridColumn {
+    width: 50%;
+  }
+}
+*/
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .gridColumn {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gridColumn {
+    width: 50%;
+  }
+}
+
+.skillImage{
+  margin-left: 25%;
+}

@@ -1,0 +1,105 @@
+.educationHeader {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 5;
+  background-repeat: repeat;
+  "font-size: 40px;"
+}
+
+.educationContainer{
+  background: white;
+  font-size:20px
+}
+
+
+/* Create two equal columns that floats next to each other */
+.educationColumnLeft {
+  float: left;
+  width: 40%;
+  padding: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  background-color: white;
+}
+
+.educationColumnRight {
+  float: left;
+  width: 60%;
+  padding: 0px;
+  font-family: RalewayRegular;
+}
+
+.educationRow {
+  margin-top: 20px;
+}
+/* Clear floats after the columns */
+.educationRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ntuaLogo {
+  width: 25%;
+  margin-left: 65%;
+}
+
+.udemyLogo {
+  width: 25%;
+  margin-left: 65%;
+}
+
+.hyperlink {
+  width: 20px;
+  padding-left: 5px;
+}
+
+.educationText {
+  margin: 0;
+}
+
+.udemyText {
+  margin: 5px;
+  font-style: italic;
+}
+
+.udemyList {
+  margin: 0;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .educationColumnLeft {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .educationColumnRight {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .ntuaLogo {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 0;
+  }
+
+  .udemyLogo {
+    width: 20%;
+    margin-left: 40%;
+  }
+
+  .educationText {
+    text-align: center;
+  }
+
+  .udemyList {
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  .udemyText {
+    text-align: center;
+  }
+}

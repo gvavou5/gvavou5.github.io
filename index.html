@@ -1,17 +1,41 @@
 ---
 layout: default
-title: Vavouliotis Georgios
+title: Main Page
 ---
 
 <meta charset="UTF-8"/>
-<meta name="description" content="Personal Webpage"/>
+<meta name="description" content="Personal Webpage-Portfolio"/>
 <meta name="keywords" content="HTML,CSS,JavaScript"/>
 <meta name="author" content="Georgios Vavouliotis"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<div class="blurb">
-	<h1>Hello world, I'm Georgios Vavouliotis!</h1>
-	<p>I'm best known as gvavou5 or uncovred penguin. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/general.js"></script>
 
+<link rel="stylesheet" href="/css/general.css">
 
+<title>Georgios Vavouliotis</title>
+<link rel="icon" href="/assets/favicon_io/favicon.ico">
+
+  {% include header.html %}
+
+  {% include nav.html %}
+
+<div class="content" id="pageContent">
+
+  {% include aboutme.html %}
+
+  {% include education.html %}
+
+  {% include work.html %}
+
+  {% include papers.html %}
+
+  {% include honors.html %}
+
+  {% include contact.html %}
+
+  {% include footer.html %}
+
+  <!--{% include skills.html %}-->
+</div>

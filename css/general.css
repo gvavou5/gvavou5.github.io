@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Exo2Regular;
+  src: url("/assets/Fonts/exo-2/Exo2-Regular.otf");
+}
+
+@font-face {
+  font-family: FFF_Tusj;
+  src: url("/assets/Fonts/FFF-Tusj/FFF_Tusj.ttf");
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url("/assets/Fonts/Lobster/Lobster_1.3.otf");
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url("/assets/Fonts/raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: RalewayItalic;
+  src: url("/assets/Fonts/raleway/Raleway-Italic.ttf");
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url("/assets/Fonts/raleway/Raleway-Bold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-family: Exo2Regular;
+  font-size: 28;
+}

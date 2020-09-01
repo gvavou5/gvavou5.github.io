@@ -1,0 +1,22 @@
+.headerContainer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 0px;
+  width:100%;
+  text-align: center;
+  height: auto;
+}
+
+.headerImage {
+  padding-left: 30%;
+  width: 100%;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .headerImage {
+    width: 100%;
+    padding-left: 0%;
+    height:auto;
+  }
+}

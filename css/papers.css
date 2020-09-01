@@ -1,0 +1,164 @@
+.papersHeader {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 5;
+}
+
+.containerpaper-timeline {
+   width: 80%;
+   margin: 0% auto 0% auto;
+   position: relative;
+   overflow: hidden;
+   font-family: RalewayRegular;
+}
+
+/* Vertical Line */
+.containerpaper-timeline:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 20%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1;
+}
+
+.paper-timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+   margin-top: 50px;
+}
+
+.paper-timeline-block-right {
+   /*float: right;*/
+   position: relative;
+   left: -webkit-calc(20% - 8px);
+   left: -moz-calc(20% - 8px);
+   left: calc(20% - 8px);
+   width: 80%;
+}
+
+.paper-timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.paper-marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 10;
+}
+
+.paper-timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #000000;
+   font-size: 20;
+}
+
+.paper-timeline-content h9 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   "font-weight: 500;"
+   font-family: RalewayRegular;
+}
+
+.paper-timeline-content span {
+   font-size: 15px;
+   color: #000;
+   font-family: RalewayBold;
+}
+
+.paper-timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+@media screen and (max-width: 1150px) {
+  .clearfixCompany{
+    display: grid;
+  }
+
+  .companyLogo {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   /*
+   .containerpaper-timeline:before {
+      left: 8px;
+      width: 2px;
+   }
+   */
+   .paper-timeline-content h3 {
+      font-size: 20px;
+   }
+   .paper-timeline-block {
+      /*width: 100%;*/
+      margin-bottom: 30px;
+   }
+   .paper-timeline-block-right {
+      float: none;
+   }
+
+   .paper-timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+
+   .companyLogo {
+     width: 100px;
+   }
+
+   .imageList {
+     float:none;
+   }
+
+   .li{
+     overflow-wrap: break-word;
+     word-break: break-all;
+   }
+
+   .clearfixCompany{
+     display: grid;
+   }
+}
+
+.companyLogo {
+  width: 150px;
+  margin-top: 5px;
+  float: left;
+  height: 150px;
+}
+
+.clearfixCompany {
+  overflow: auto;
+}
+
+.imageList{
+  position:relative;
+  margin-top: 1%;
+  float:left;
+  display: table;
+  /*list-style-image: url("/assets/bullet.jpg");*/
+}
