@@ -34,7 +34,7 @@
   display: block;
   max-width:100%;
   width: 50%;
-  margin-left: 20%;
+  margin-left: 23%;
   height:auto;
   transition: 1.0s ease;
   backface-visibility: hidden;
@@ -112,7 +112,7 @@ a.mediaLink{
   text-decoration: none;
 }
 .name {
-  font-family: Exo2Regular;
+  font-family: Times;
   padding:0;
   margin: 0 auto 0 auto;
   font-size: 40;

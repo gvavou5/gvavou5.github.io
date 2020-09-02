@@ -1,19 +1,21 @@
 /* The navbar container */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #000000;
   z-index: 1000;
 }
 
+
 /* Navbar links */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
+  color: #FFFFFF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 17px 31.2px;
   text-decoration: none;
 }
+
 
 /* Links - change color on hover */
 .topnav a:hover {
@@ -34,13 +36,13 @@
 }
 
 .active {
-  background-color: green;
+  background-color: #6666;
 }
 
 #navlink {
   /*font-family: Lobster;*/
   font-family: Exo2Regular;
-  font-size: 18;
+  font-size: 20;
 }
 
 .topnav .icon {
