@@ -39,6 +39,11 @@
   background-color: #6666;
 }
 
+.aboutMeLinksNav {
+  text-decoration: none;
+  color: blue;
+}
+
 #navlink {
   /*font-family: Lobster;*/
   font-family: Exo2Regular;
