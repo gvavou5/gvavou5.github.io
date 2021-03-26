@@ -3,3 +3,5 @@ font size -- publications
 scrollbar
 
 blog
+
+colors and font sizes in order to make it readable from cell phone
