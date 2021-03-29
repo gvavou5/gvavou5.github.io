@@ -95,6 +95,15 @@
    color: #888;
 }
 
+a.text h3{
+  text-decoration:none;
+}
+
+.aboutMeLinks {
+  text-decoration: none;
+  color: #BC0000;
+}
+
 @media screen and (max-width: 1150px) {
   .clearfixCompany{
     display: grid;

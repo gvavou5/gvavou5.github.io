@@ -67,6 +67,11 @@
   font-style: italic;
 }
 
+.aboutMeLinks {
+  text-decoration: none;
+  color: #BC0000;
+}
+
 .udemyList {
   margin: 0;
 }

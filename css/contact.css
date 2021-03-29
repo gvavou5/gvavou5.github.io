@@ -16,6 +16,7 @@
 .contactLink {
   align: center;
   color: #BC0000;
+  text-decoration: none;
 }
 .contactImage {
   width: 10%;
