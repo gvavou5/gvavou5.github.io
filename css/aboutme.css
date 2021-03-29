@@ -9,8 +9,10 @@
 }
 
 .column.right {
-  margin: 0% 5% 0% 5%;
+  margin: 2% 5% 0% 5%;
   width: 50%;
+  border: 6px solid #333333;
+  background-color: #F2F2F2;
 }
 
 .column.right p {
@@ -18,8 +20,24 @@
   text-align: justify;
   font-size-adjust: auto;
   font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+.column.full {
+  width = 80%;
+  margin: 2% 5% 0% 5%;
+  border: 2px solid #333333;
+  background-color: #F2F2F2;
+}
+
+.column.full p {
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: justify;
+  font-size-adjust: auto;
+
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -127,7 +145,7 @@ a.mediaLink{
 
 .aboutMeLinks {
   text-decoration: none;
-  color: blue;
+  color: #BC0000;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 768px) {
@@ -154,3 +172,8 @@ a.mediaLink{
     width: 50%;
   }
 }
+
+
+
+
+

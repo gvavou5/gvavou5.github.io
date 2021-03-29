@@ -1,11 +1,11 @@
-.papersHeader {
+.newsHeader {
   background-color: #630000;
   color: white;
   text-align: center;
   padding: 5;
 }
 
-.containerpaper-timeline {
+.containernews-timeline {
    width: 80%;
    margin: 0% auto 0% auto;
    position: relative;
@@ -15,7 +15,7 @@
 }
 
 /* Vertical Line */
-.containerpaper-timeline:before {
+.containernews-timeline:before {
    content: '';
    position: absolute;
    top: 0;
@@ -27,7 +27,7 @@
    z-index: 1;
 }
 
-.paper-timeline-block {
+.news-timeline-block {
    width: -webkit-calc(50% + 8px);
    width: -moz-calc(50% + 8px);
    width: calc(50% + 8px);
@@ -40,10 +40,10 @@
    -moz-box-pack: justify;
    justify-content: space-between;
    clear: both;
-   margin-top: 50px;
+   margin-top: 10px;
 }
 
-.paper-timeline-block-right {
+.news-timeline-block-right {
    /*float: right;*/
    position: relative;
    left: -webkit-calc(20% - 8px);
@@ -52,14 +52,14 @@
    width: 80%;
 }
 
-.paper-timeline-block-left {
+.news-timeline-block-left {
    float: left;
    direction: rtl
 }
 
-.paper-marker {
-   width: 16px;
-   height: 16px;
+.news-marker {
+   width: 10px;
+   height: 10px;
    border-radius: 50%;
    border: 2px solid #F5F7FA;
    background: #9E0000;
@@ -67,28 +67,28 @@
    z-index: 10;
 }
 
-.paper-timeline-content {
+.news-timeline-content {
    width: 95%;
    padding: 0 15px;
    color: #000000;
    font-size: 20;
 }
 
-.paper-timeline-content h9 {
+.news-timeline-content h9 {
    margin-top: 5px;
    margin-bottom: 5px;
-   font-size: 25px;
+   font-size: 20px;
    "font-weight: 500;"
    font-family: RalewayRegular;
 }
 
-.paper-timeline-content span {
+.news-timeline-content span {
    font-size: 15px;
    color: #000;
    font-family: RalewayBold;
 }
 
-.paper-timeline-content p {
+.news-timeline-content p {
    font-size: 14px;
    line-height: 1.5em;
    word-spacing: 1px;
@@ -112,18 +112,18 @@
       width: 2px;
    }
    */
-   .paper-timeline-content h3 {
+   .news-timeline-content h3 {
       font-size: 20px;
    }
-   .paper-timeline-block {
+   .news-timeline-block {
       /*width: 100%;*/
       margin-bottom: 30px;
    }
-   .paper-timeline-block-right {
+   .news-timeline-block-right {
       float: none;
    }
 
-   .paper-timeline-block-left {
+   .news-timeline-block-left {
       float: none;
       direction: ltr;
    }
