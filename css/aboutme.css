@@ -106,8 +106,9 @@ a.mediaLink{
   padding-bottom: 2px;
   float: left;
   width: 12%;
-  margin-right: 6.5%;
-  margin-left: 6.5%;
+  margin-right: 4%;
+  margin-left: 3%;
+  transition: 1.0s ease;
 }
 
 .CVButton {
