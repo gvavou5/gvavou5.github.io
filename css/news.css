@@ -49,12 +49,13 @@
    left: -webkit-calc(20% - 8px);
    left: -moz-calc(20% - 8px);
    left: calc(20% - 8px);
+   left: calc(12.5% - 8px);
    width: 80%;
 }
 
 .news-timeline-block-left {
    float: left;
-   direction: rtl
+   direction: rtl;
 }
 
 .news-marker {
@@ -164,3 +165,38 @@
   display: table;
   /*list-style-image: url("/assets/bullet.jpg");*/
 }
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+   /* background-color: #9E0000; */
+   background-color: #630000;
+   color: #ffffff;
+   cursor: pointer;
+   padding: 6px;
+   width: 100%;
+   border: none;
+   text-align: center;
+   outline: none;
+   font-size: 25px;
+ }
+
+ /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+   background-color: #c51700;
+ }
+
+ /* Style the collapsible content. Note: hidden by default */
+.content-collaps {
+   padding: 0 18px;
+   display: none;
+   overflow: hidden;
+   background-color: #f1f1f1;
+ }
+
+ .content-collaps-inv {
+   padding: 0 18px;
+   /* display: none; */
+   overflow: hidden;
+   background-color: #f1f1f1;
+ }

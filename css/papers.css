@@ -60,13 +60,13 @@
 }
 
 
-
 .paper-timeline-block-right {
    /*float: right;*/
    position: relative;
    left: -webkit-calc(20% - 8px);
    left: -moz-calc(20% - 8px);
    left: calc(20% - 8px);
+   left: calc(12.5% - 8px);
    width: 80%;
 }
 
