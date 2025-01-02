@@ -27,6 +27,11 @@
    z-index: 1;
 }
 
+
+.containernewsTimeline {
+   margin-bottom: 5px;
+}
+
 .news-timeline-block {
    width: -webkit-calc(50% + 8px);
    width: -moz-calc(50% + 8px);
@@ -69,7 +74,7 @@
 }
 
 .news-timeline-content {
-   width: 95%;
+   width: 100%;
    padding: 0 15px;
    color: #000000;
    font-size: 20;
@@ -78,7 +83,7 @@
 .news-timeline-content h9 {
    margin-top: 5px;
    margin-bottom: 5px;
-   font-size: 20px;
+   font-size: 18px;
    "font-weight: 500;"
    font-family: RalewayRegular;
 }
