@@ -1,0 +1,296 @@
+# =============================================================
+#  NEWS — Add new items at the TOP of this list
+# =============================================================
+#
+#  HOW TO ADD A NEWS ITEM:
+#  1. Copy the block below (between the ---CUT--- lines)
+#  2. Paste it at the very top of the list (before the first "-")
+#  3. Fill in the fields
+#  4. Commit and push — done.
+#
+#  ---CUT---
+#  - year: 2026
+#    type: paper          # award | paper | service | talk | other
+#    featured: true       # true = always shown; false = hidden behind "show more"
+#    text: >
+#      Your news text here. HTML is supported, e.g.
+#      <a href="https://..." target="_blank">Paper Title</a> accepted at <strong>VENUE 2026</strong>.
+#  ---CUT---
+#
+#  TYPE OPTIONS (controls the badge color):
+#    award   → gold badge  🏆
+#    paper   → blue badge  📄
+#    service → green badge 🎓
+#    talk    → purple badge 🎤
+#    other   → grey badge  📌
+#
+# =============================================================
+
+- year: 2025
+  type: talk
+  featured: true
+  text: >
+    I'll give a talk on <strong>Interaction between Virtual Memory and Hardware Prefetching</strong>
+    at the <a href="https://cmu-safari.github.io/Virtuoso-Workshop-MICRO25/" target="_blank">Virtuoso Workshop</a>.
+
+- year: 2025
+  type: paper
+  venue: "CAL'25"
+  featured: true
+  text: >
+    <a href="https://ieeexplore.ieee.org/abstract/document/11193713" target="_blank">Context-Aware Set Dueling
+    for Dynamic Policy Arbitration</a> accepted at <strong>IEEE CAL 2025</strong>.
+
+- year: 2025
+  type: paper
+  venue: "ASPLOS'25"
+  featured: true
+  text: >
+    <a href="https://dl.acm.org/doi/10.1145/3669940.3707247" target="_blank">Instruction-Aware Cooperative
+    TLB and Cache Replacement Policies</a> accepted at <strong>ASPLOS 2025</strong>.
+
+- year: 2025
+  type: award
+  featured: true
+  text: >
+    Received the <strong>Future Star Award</strong> from <strong>Huawei</strong> for research contributions.
+
+- year: 2025
+  type: award
+  featured: true
+  text: >
+    Received the <strong>Innovation Award</strong> from <strong>Huawei</strong> for contributions to performance features.
+
+- year: 2025
+  type: paper
+  venue: "HPCA'25"
+  featured: true
+  text: >
+    <a href="https://ieeexplore.ieee.org/abstract/document/10946723" target="_blank">To Cross, or Not to Cross
+    Pages for Prefetching?</a> accepted at <strong>HPCA 2025</strong>.
+
+- year: 2024
+  type: award
+  featured: true
+  text: >
+    Received the <strong>Skyline Award</strong> from <strong>Huawei</strong>.
+
+- year: 2024
+  type: award
+  featured: true
+  text: >
+    <a href="https://www.computer.org/csdl/proceedings-article/hpca/2024/931300a528/1VOAAUAW328" target="_blank">A Two Level
+    Neural Approach…</a> received the
+    <a href="/Documents/Hipeac_Award_HPCA24_Paper.pdf" target="_blank">HiPEAC 2024 Paper Award</a>.
+
+- year: 2024
+  type: talk
+  featured: false
+  text: >
+    Talk on <strong>"Importance of Single-Thread Performance in the Many-Core Era"</strong>
+    at SPARKS Workshop (ISCA 2024).
+
+- year: 2024
+  type: talk
+  featured: false
+  text: >
+    Talk on <strong>Microarchitectural Prediction and Prefetching in Virtual Memory Systems</strong>
+    at <strong>AMD Research</strong>.
+
+- year: 2024
+  type: award
+  featured: false
+  text: >
+    Promoted to <strong>Senior Researcher</strong> at <strong>Huawei Research Center Switzerland</strong>.
+
+- year: 2024
+  type: paper
+  venue: "IPDPS'24"
+  featured: false
+  text: >
+    <a href="https://ieeexplore.ieee.org/document/10579233" target="_blank">Practically Tackling Memory
+    Bottlenecks of Graph-Processing Workloads</a> accepted at <strong>IPDPS 2024</strong>.
+
+- year: 2024
+  type: paper
+  venue: "HPCA'24"
+  featured: false
+  text: >
+    <a href="https://www.computer.org/csdl/proceedings-article/hpca/2024/931300a528/1VOAAUAW328" target="_blank">A Two Level
+    Neural Approach Combining Off-Chip Prediction with Adaptive Prefetch Filtering</a> accepted at <strong>HPCA 2024</strong>.
+
+- year: 2023
+  type: award
+  featured: false
+  text: >
+    My Ph.D. dissertation <strong>"Advanced Hardware Prefetching in Virtual Memory Systems"</strong>
+    received the <strong>Cum Laude Award</strong>.
+
+- year: 2023
+  type: award
+  featured: false
+  text: >
+    Received the <strong>Hisilicon Core Star Award</strong> from <strong>Huawei</strong>.
+
+- year: 2023
+  type: award
+  featured: false
+  text: >
+    <a href="https://dl.acm.org/doi/abs/10.1145/3591195.3595269" target="_blank">Concurrent GCs and Modern
+    Java Workloads: A Cache Perspective</a> received the
+    <a href="/Documents/Best_Paper_Award1.pdf" target="_blank">Best Paper Award</a> at ISMM'23.
+
+- year: 2023
+  type: paper
+  venue: "ISMM'23"
+  featured: false
+  text: >
+    <a href="https://dl.acm.org/doi/abs/10.1145/3591195.3595269" target="_blank">Concurrent GCs and Modern
+    Java Workloads: A Cache Perspective</a> accepted at <strong>ISMM 2023</strong>.
+
+- year: 2023
+  type: other
+  featured: false
+  text: >
+    Joined <a href="https://careers.huaweirc.ch/" target="_blank">Huawei Research Center Switzerland</a>
+    in Zurich as Postdoctoral Researcher.
+
+- year: 2023
+  type: talk
+  featured: false
+  text: >
+    Talk on <strong>Hardware Prefetching in Virtual Memory Systems</strong> at the
+    <a href="https://www.ece.ntua.gr/en/article/579" target="_blank">6th Computing Systems Research Day</a> in Athens.
+
+- year: 2023
+  type: award
+  featured: false
+  text: >
+    <a href="https://ieeexplore.ieee.org/document/9923823" target="_blank">Page Size Aware Cache Prefetching</a>
+    received the <a href="/Documents/Hipeac_Award_MICRO22_Paper.pdf" target="_blank">HiPEAC 2022 Paper Award</a>.
+
+- year: 2022
+  type: award
+  featured: false
+  text: >
+    <a href="https://ieeexplore.ieee.org/document/9923823" target="_blank">Page Size Aware Cache Prefetching</a>
+    selected among the most interesting MICRO'22 papers by
+    <a href="https://us20.campaign-archive.com/?u=a8d7caa7874c7a96f1301bc15&id=f2746c83e9" target="_blank">Denis Bakhvalov</a>.
+
+- year: 2022
+  type: paper
+  venue: "MICRO'22"
+  featured: false
+  text: >
+    <a href="https://ieeexplore.ieee.org/document/9923823" target="_blank">Page Size Aware Cache Prefetching</a>
+    accepted at <strong>MICRO 2022</strong>.
+
+# - year: 2022
+#   type: award
+#   featured: false
+#   text: >
+#     Received the <strong>MICRO'22 Student Travel Grant</strong> and attended MICRO'22 in Chicago.
+
+- year: 2022
+  type: poster
+  featured: false
+  text: >
+    Presented a <a href="/Documents/ISCA_22_Poster_48x36.pdf" target="_blank">poster</a> of our ISCA'21 paper
+    <a href="https://ieeexplore.ieee.org/document/9499825" target="_blank">Exploiting Page Table Locality for
+    Agile TLB Prefetching</a> at ISCA'22 in New York.
+
+# - year: 2022
+#   type: award
+#   featured: false
+#   text: >
+#     Received the <strong>ISCA'22 Student Travel Grant</strong> and attended ISCA'22 in New York.
+
+- year: 2022
+  type: award
+  featured: false
+  text: >
+    MICRO'21 paper <em>Morrigan</em> received the
+    <a href="/Documents/Hipeac_Award_MICRO21_Paper.pdf" target="_blank">HiPEAC 2021 Paper Award</a>.
+
+- year: 2022
+  type: award
+  featured: false
+  text: >
+    <a href="https://ieeexplore.ieee.org/document/9499825" target="_blank">Exploiting Page Table Locality for
+    Agile TLB Prefetching</a> received the
+    <a href="/Documents/Hipeac_Award_ISCA21_Paper.pdf" target="_blank">HiPEAC 2021 Paper Award</a>.
+
+- year: 2021
+  type: talk
+  featured: false
+  text: >
+    Talk on <a href="https://dl.acm.org/doi/10.1145/3466752.3480049" target="_blank">Morrigan</a>
+    at <strong>Huawei Zurich</strong>.
+
+# - year: 2021
+#   type: other
+#   featured: false
+#   text: >
+#     Joined <strong>Huawei Zurich Research Center</strong> for a 6-month internship on memory management.
+
+- year: 2021
+  type: poster
+  featured: false
+  text: >
+    <a href="/Documents/Vavouliotis_Poster_SRC21.pdf" target="_blank">Leveraging Page Size Information to
+    Enhance Data Cache Prefetching</a> selected for the
+    <a href="/Documents/Vavouliotis_Micro_SRC21.pdf" target="_blank">2021 ACM Student Research Competition (SRC)</a>
+    at MICRO'21.
+
+- year: 2021
+  type: paper
+  venue: "MICRO'21"
+  featured: false
+  text: >
+    <a href="https://dl.acm.org/doi/10.1145/3466752.3480049" target="_blank">Morrigan: A Composite Instruction
+    TLB Prefetcher</a> accepted at <strong>MICRO 2021</strong>.
+
+- year: 2021
+  type: award
+  types: [award, poster]
+  featured: false
+  text: >
+    <a href="/Documents/Vavouliotis_Poster_ACM21.pdf" target="_blank">Leveraging Page Size Information to
+    Enhance Data Cache Prefetching</a> received the
+    <a href="/Documents/Best-Poster-Award-ACM.pdf" target="_blank">Best Poster Award</a>
+    at the 2021 ACM Summer School on HPC Architectures for AI and Dedicated Applications.
+
+# - year: 2021
+#   type: other
+#   featured: false
+#   text: >
+#     Attended the <strong>2021 ACM Summer School on HPC Architectures for AI and Dedicated Applications</strong>.
+
+- year: 2021
+  type: paper
+  venue: "ISCA'21"
+  featured: false
+  text: >
+    <a href="https://ieeexplore.ieee.org/document/9499825" target="_blank">Exploiting Page Table Locality for
+    Agile TLB Prefetching</a> accepted at <strong>ISCA 2021</strong>.
+
+- year: 2020
+  type: talk
+  featured: false
+  text: >
+    Presentation of <a href="/Documents/Vavouliotis_Poster_YArch.pdf" target="_blank">Cost-Effective Instruction
+    TLB Prefetching</a> at YArch 2020 available on
+    <a href="https://www.youtube.com/watch?v=3AfOSBaUiCw&list=PLe9IED-JzOQRA-C2Tr9RQsODmD_2rtCZ3&index=6&t=218s" target="_blank">YouTube</a>.
+
+- year: 2020
+  type: paper
+  featured: false
+  text: >
+    <a href="/Documents/Vavouliotis_Poster_YArch.pdf" target="_blank">Cost-Effective Instruction TLB
+    Prefetching</a> accepted at <strong>YArch 2020</strong> Workshop (co-located with ASPLOS'20).
+
+# - year: 2019
+#   type: award
+#   featured: false
+#   text: >
+#     Received the <strong>FPI Doctoral Fellowship</strong> from the Spanish Government (MINECO).

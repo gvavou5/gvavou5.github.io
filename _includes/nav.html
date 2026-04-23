@@ -1,15 +1,28 @@
-<link rel="stylesheet" href="/css/nav.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div id="navbar" class="topnav">
-  <!-- <a class="link" href="/blog" id="navLink"><b>Blog</b></a>-->
-  <a class="link" href="#contact" id="navLink"><b>Contact</b></a>
-  <a id="navLink" target="_blank" href="/Documents/CV.pdf"><b>CV</b></a>
-  <!--<a class="link" href="#honors" id="navLink"><b>Honors & Awards</b></a>-->
-  <a class="link" href="#papers" id="navLink"><b>Publications</b></a>
-  <!-- <a class="link" href="#professionalexperience" id="navLink"><b>Professional Experience</b></a>-->
- <!--  <a class="link" href="#education" id="navLink"><b>Education</b></a>-->
-  <a class="link" href="#news" id="navLink"><b>Recent News</b></a>
-  <a class="link active" href="#aboutme" id="navLink"><b>About Me</b></a>
-  <a href="javascript:void(0);" class="icon" id="respIcon">
-  <i class="fa fa-bars"></i>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#about">
+      {{ site.author.name_short }}
+      <img src="/assets/uncovered_penguin.png" class="nav-penguin" alt="">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="{{ site.author.cv }}" target="_blank" class="nav-cv">CV</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a href="#publications">Publications</a>
+  <a href="#service">Service</a>
+  <a href="#contact">Contact</a>
+  <a href="{{ site.author.cv }}" target="_blank">CV ↗</a>
 </div>

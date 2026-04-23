@@ -1,0 +1,13 @@
+# =============================================================
+#  DISSERTATION — Edit fields below if needed
+# =============================================================
+
+title: "Advanced Hardware Prefetching in Virtual Memory Systems"
+url: "https://upcommons.upc.edu/handle/2117/403959"
+thesis_statement: >
+  Hardware TLB prefetching can reduce the address translation overheads posed by applications
+  with large data and code footprints, while exploiting address translation metadata available
+  at the microarchitecture and runtime levels can improve the performance of cache prefetchers.
+links:
+  - label: PDF
+    url: "/Documents/Dissertation_Vavouliotis.pdf"

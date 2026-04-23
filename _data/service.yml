@@ -1,0 +1,46 @@
+# =============================================================
+#  SERVICE — Add new entries at the TOP of each list
+# =============================================================
+
+pc:
+  - conference: "HPCA"
+    entries:
+      - label: "HPCA'26"
+        url: "https://hpca-conf.org/2026/program-committee/"
+      - label: "HPCA'25"
+        url: "https://hpca-conf.org/2025/program-committee/"
+      - label: "HPCA'24 AE"
+        url: "https://www.hpca-conf.org/2024/submit/artifacts.php"
+
+  - conference: "MICRO"
+    entries:
+      - label: "MICRO'25"
+        url: "https://www.microarch.org/micro58/committees/pc.php"
+      - label: "MICRO'24"
+        url: "https://microarch.org/micro57/committees/pc.php"
+
+  - conference: "ISCA"
+    entries:
+      - label: "ISCA'25 Industry Track"
+        url: "https://www.iscaconf.org/isca2025/committees/pc.php"
+      - label: "ISCA'24 Industry Track"
+        url: "https://www.iscaconf.org/isca2024/committees/pc.php"
+
+  - conference: "ASPLOS"
+    entries:
+      - label: "ASPLOS'25"
+        url: "https://www.asplos-conference.org/asplos2025/committee/"
+
+journals:
+  - label: "TACO"
+    url: "https://dl.acm.org/journal/taco"
+  - label: "TC"
+    url: "https://www.computer.org/csdl/journal/tc"
+  - label: "TCAD"
+    url: "https://www.computer.org/csdl/journal/tc"
+
+organization:
+  - year: 2024
+    venue: "ISCA'24"
+    role: "Website Chair"
+    url: "https://www.iscaconf.org/isca2024/committees/org.php"

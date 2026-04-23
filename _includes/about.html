@@ -1,0 +1,45 @@
+<section id="about">
+  <div class="about-grid">
+
+    <div class="about-photo-wrap">
+      <img class="about-photo" src="{{ site.author.photo }}" alt="{{ site.author.name }}">
+      <div class="social-links">
+        <a class="social-link" href="{{ site.social.linkedin }}" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+        <a class="social-link" href="{{ site.social.github }}" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a class="social-link scholar-link" href="{{ site.social.scholar }}" target="_blank"
+           data-scholar-id="EmltFKEAAAAJ">
+          <i class="fa-brands fa-google-scholar"></i> Scholar
+          <span class="scholar-count" id="scholarCount"></span>
+        </a>
+        <a class="social-link" href="mailto:{{ site.author.email_personal }}">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a class="social-link" href="{{ site.social.dblp }}" target="_blank">
+          <i class="fa-solid fa-database"></i> DBLP
+        </a>
+
+      </div>
+    </div>
+
+    <div class="about-text">
+      <h1 class="about-name">{{ site.author.name }}</h1>
+      <p class="about-role">
+        {{ site.author.role }} ·
+        <strong><a href="{{ site.author.affiliation_url }}" target="_blank">{{ site.author.affiliation }}</a></strong>
+      </p>
+
+      <div class="research-tags">
+        {% for tag in site.research_tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="about-bio">{{ site.bio_short | markdownify }}</div>
+    </div>
+
+  </div>
+</section>

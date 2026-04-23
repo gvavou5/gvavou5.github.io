@@ -1,55 +1,49 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# =============================================================
+#  SITE SETTINGS — Edit this file to change global information
+# =============================================================
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Georgios Vavouliotis
+description: Senior Researcher at Huawei Research Center Switzerland. Computer Architecture, Prefetching, Virtual Memory.
 
-# Build settings
-#theme: minima
+# --- Personal Info ---
+author:
+  name: "Georgios Vavouliotis"
+  name_short: "G. Vavouliotis"
+  nickname: "Georgios (Yorgos) Vavouliotis"
+  role: "Senior Researcher"
+  affiliation: "Huawei Research Center Switzerland"
+  affiliation_url: "https://careers.huaweirc.ch/"
+  photo: "/assets/profile.jpg"
+  cv: "/Documents/CV.pdf"
+  email_personal: "gvavou5@gmail.com"
+  email_work: "georgios.vavouliotis@huawei.com"
+  office: "Thurgauerstrasse 80, 8050 Zurich, Switzerland"
+  office_map: "https://www.google.com/maps/dir//to+Huawei+Technologies,+Zurich+Research+Center,+Thurgauerstrasse+80,+8050+Z%C3%BCrich"
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# --- Social Links ---
+social:
+  linkedin: "https://www.linkedin.com/in/georgiosvavouliotis/"
+  github: "https://github.com/gvavou5"
+  scholar: "https://scholar.google.com/citations?user=EmltFKEAAAAJ&hl=en"
+  dblp: "https://dblp.org/pid/298/8514.html"
 
+# --- Research Tags (shown in About section) ---
+research_tags:
+  - "Computer Architecture"
+  - "Cache Prefetching/Management"
+  - "Virtual Memory"
+  - "ML for Architecture"
+  - "Datacenters"
+
+# --- Bio (supports HTML) ---
+bio_short: |
+  My name is Georgios (Yorgos) Vavouliotis and I am a Senior Researcher at **Huawei Research Center** in Zurich. I received my Ph.D. from **Universitat Politècnica de Catalunya** and **Barcelona Supercomputing Center**. I also hold a diploma on Electrical and Computer Engineering from the **National Technical University of Athens**.
+
+  My research explores the frontiers of computer architecture and pioneers innovative microarchitectural solutions that address critical computational challenges. I explore advanced techniques for reducing address translation overheads, enhancing cache prefetching performance, and developing smart cache/memory management strategies for complex computing environments and diverse application types. By leveraging AI/ML techniques, I also build intelligent and adaptive components while re-thinking microarchitectural designs for emerging application domains.
+
+  My research work has received accolades, including **Best Paper** and **Best Poster** awards, and has been mainly featured in top-tier computer architecture conferences, including **ISCA**, **HPCA**, **MICRO**, and **ASPLOS**.
+
+# --- Jekyll Build Settings (don't touch) ---
+baseurl: ""
+url: ""
 permalink: /blog/:year/:month/:day/:title

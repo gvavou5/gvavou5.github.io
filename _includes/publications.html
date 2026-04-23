@@ -1,0 +1,77 @@
+<section id="publications">
+  <div class="section-header">
+    <h2>Publications</h2>
+  </div>
+
+  <!-- Year filter buttons -->
+  <div class="filter-bar" id="papersFilterBar">
+    <button class="filter-btn active" data-year="all" onclick="filterPapers('all', this)">All Years</button>
+    {% assign years = site.data.papers | map: "year" | uniq | sort | reverse %}
+    {% for year in years %}
+      <button class="filter-btn" data-year="{{ year }}" onclick="filterPapers('{{ year }}', this)">
+        {{ year }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <!-- Papers grouped by year -->
+  {% assign years = site.data.papers | map: "year" | uniq | sort | reverse %}
+  {% for year in years %}
+  <div class="year-group" data-year="{{ year }}">
+    <div class="year-label">{{ year }}</div>
+
+    {% for paper in site.data.papers %}
+      {% if paper.year == year %}
+      <div class="paper-card{% if paper.award %} paper-award{% endif %}">
+
+        <div class="paper-top-row">
+          <span class="paper-venue-badge">{{ paper.venue }}</span>
+          {% if paper.award %}
+          <span class="paper-award-badge">
+            <i class="fa-solid fa-trophy"></i> {{ paper.award }}
+          </span>
+          {% endif %}
+        </div>
+
+        <div class="paper-title">
+          <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
+        </div>
+
+        <div class="paper-authors">
+          {{ paper.authors | replace: "**Georgios Vavouliotis**", "<strong class='me'>Georgios Vavouliotis</strong>" | markdownify | remove: "<p>" | remove: "</p>" }}
+        </div>
+
+        <div class="paper-venue-full">{{ paper.venue_full }}</div>
+
+        <div class="paper-links">
+          {% for link in paper.links %}
+          <a class="paper-link" href="{{ link.url }}" target="_blank">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+
+      </div>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+  {% endfor %}
+
+  <!-- Dissertation -->
+  <div class="dissertation-card">
+    <div class="dissertation-label">Doctoral Dissertation</div>
+    <div class="dissertation-title">
+      <a href="{{ site.data.dissertation.url }}" target="_blank">
+        {{ site.data.dissertation.title }}
+      </a>
+    </div>
+    <blockquote class="dissertation-thesis">
+      {{ site.data.dissertation.thesis_statement }}
+    </blockquote>
+    <div class="dissertation-links">
+      {% for link in site.data.dissertation.links %}
+      <a class="dissertation-link" href="{{ link.url }}" target="_blank">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>

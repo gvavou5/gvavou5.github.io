@@ -1,0 +1,192 @@
+# =============================================================
+#  PAPERS — Add new papers at the TOP of this list
+# =============================================================
+#
+#  HOW TO ADD A PAPER:
+#  1. Copy the block below (between the ---CUT--- lines)
+#  2. Paste it at the very top of the list (before the first "-")
+#  3. Fill in the fields. Delete any optional fields you don't need.
+#  4. Commit and push — done.
+#
+#  ---CUT---
+#  - year: 2026
+#    venue: "ISCA'26"              # Short name shown as badge
+#    title: "Your Paper Title"
+#    url: "https://doi.org/..."    # Link to paper (ACM DL, IEEE, etc.)
+#    authors: "Author One, **Georgios Vavouliotis**, Author Three."  # Use **name** to bold yourself
+#    venue_full: "53rd IEEE/ACM International Symposium on Computer Architecture (ISCA '26)."
+#    award: "Best Paper Award"     # OPTIONAL — delete line if no award
+#    links:
+#      - label: PDF
+#        url: /Documents/Vavouliotis_ISCA26.pdf
+#      - label: Slides
+#        url: /Documents/ISCA26_slides.pdf
+#      - label: Video                # OPTIONAL
+#        url: https://youtube.com/...
+#  ---CUT---
+#
+# =============================================================
+
+- year: 2025
+  venue: "IEEE CAL'25"
+  title: "Context-Aware Set Dueling for Dynamic Policy Arbitration"
+  url: "https://ieeexplore.ieee.org/abstract/document/11193713"
+  authors: "Diamantis Patsidis, **Georgios Vavouliotis**."
+  venue_full: "IEEE Computer Architecture Letters (CAL), Oct 2025."
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_CAL25.pdf
+    # - label: Slides
+    #   url: /Documents/CAL25_slides.pdf
+
+- year: 2025
+  venue: "ASPLOS'25"
+  title: "Instruction-Aware Cooperative TLB and Cache Replacement Policies"
+  url: "https://dl.acm.org/doi/10.1145/3669940.3707247"
+  authors: "**Georgios Vavouliotis**\\*, Dimitrios Chasapis\\*, Daniel A. Jimenez, Marc Casas. *(\\*Equally contributed)*"
+  venue_full: "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '25)."
+  award: "HiPEAC 2025 Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_ASPLOS25.pdf
+    - label: Slides
+      url: /Documents/ASPLOS25-itp+xptp.pdf
+
+- year: 2025
+  venue: "HPCA'25"
+  title: "To Cross, or Not to Cross Pages for Prefetching?"
+  url: "https://ieeexplore.ieee.org/abstract/document/10946723"
+  authors: "**Georgios Vavouliotis**, Marti Torrents, Boris Grot, Kleovoulos Kalaitzidis, Leeor Peled, Marc Casas."
+  venue_full: "31st IEEE International Symposium on High-Performance Computer Architecture (HPCA '25)."
+  award: "HiPEAC 2025 Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_HPCA25.pdf
+    - label: Slides
+      url: /Documents/HPCA25-dripper.pptx
+
+- year: 2024
+  venue: "HPCA'24"
+  title: "A Two Level Neural Approach Combining Off-Chip Prediction with Adaptive Prefetch Filtering"
+  url: "https://www.computer.org/csdl/proceedings-article/hpca/2024/931300a528/1VOAAUAW328"
+  authors: "Alexandre Valentin Jamet, **Georgios Vavouliotis**, Lluc Alvarez, Daniel A. Jimenez, Marc Casas."
+  venue_full: "30th IEEE International Symposium on High-Performance Computer Architecture (HPCA '24)."
+  award: "HiPEAC 2024 Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_HPCA24.pdf
+    - label: Slides (PDF)
+      url: /Documents/HPCA30_tlp.pdf
+    - label: Slides (Keynote)
+      url: /Documents/HPCA30_tlp.key
+
+- year: 2024
+  venue: "IPDPS'24"
+  title: "Practically Tackling Memory Bottlenecks of Graph-Processing Workloads"
+  url: "https://ieeexplore.ieee.org/document/10579233"
+  authors: "Alexandre Valentin Jamet, **Georgios Vavouliotis**, Lluc Alvarez, Daniel A. Jimenez, Marc Casas."
+  venue_full: "38th IEEE International Parallel & Distributed Processing Symposium (IPDPS '24)."
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_IPDPS24.pdf
+
+- year: 2023
+  venue: "ISMM'23"
+  title: "Concurrent GCs and Modern Java Workloads: A Cache Perspective"
+  url: "https://dl.acm.org/doi/abs/10.1145/3591195.3595269"
+  authors: "Maria Carpen-Amarie, **Georgios Vavouliotis**, Konstantinos Tovletoglou, Boris Grot, Rene Mueller."
+  venue_full: "ACM SIGPLAN International Symposium on Memory Management (ISMM '23)."
+  award: "Best Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_ISMM23.pdf
+    - label: Slides
+      url: /Documents/ISMM2023_slides.pdf
+    - label: Award
+      url: /Documents/Best_Paper_Award1.pdf
+
+- year: 2022
+  venue: "MICRO'22"
+  title: "Page Size Aware Cache Prefetching"
+  url: "https://ieeexplore.ieee.org/document/9923823"
+  authors: "**Georgios Vavouliotis**, Gino Chancon, Lluc Alvarez, Paul V. Gratz, Daniel A. Jimenez, Marc Casas."
+  venue_full: "55th IEEE/ACM International Symposium on Microarchitecture (MICRO '22)."
+  award: "HiPEAC 2022 Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_MICRO22.pdf
+    - label: Slides
+      url: /Documents/MICRO22-PPM.key
+
+- year: 2021
+  venue: "MICRO'21"
+  title: "Morrigan: A Composite Instruction TLB Prefetcher"
+  url: "https://dl.acm.org/doi/10.1145/3466752.3480049"
+  authors: "**Georgios Vavouliotis**, Lluc Alvarez, Boris Grot, Daniel A. Jimenez, Marc Casas."
+  venue_full: "54th IEEE/ACM International Symposium on Microarchitecture (MICRO '21)."
+  award: "HiPEAC 2021 Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_MICRO21.pdf
+    - label: Video
+      url: https://www.youtube.com/watch?v=ALTjrb4LaPk&t=21s
+    - label: Slides
+      url: /Documents/MICRO21-Morrigan.key
+    - label: Lightning Slides
+      url: /Documents/MICRO21-Morrigan-Lightning.key
+
+- year: 2021
+  venue: "ISCA'21"
+  title: "Exploiting Page Table Locality for Agile TLB Prefetching"
+  url: "https://ieeexplore.ieee.org/document/9499825"
+  authors: "**Georgios Vavouliotis**, Lluc Alvarez, Vasileios Karakostas, Konstantinos Nikas, Nectarios Kozyris, Daniel A. Jimenez, Marc Casas."
+  venue_full: "48th IEEE/ACM International Symposium on Computer Architecture (ISCA '21)."
+  award: "HiPEAC 2021 Paper Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_ISCA21.pdf
+    - label: Video
+      url: https://www.youtube.com/watch?v=cSMDkxRlnFk&t=362s
+    - label: Slides
+      url: /Documents/ISCA21-Exploiting-Page-Table-Locality-for-Agile-TLB-Prefetching.key
+    - label: Poster
+      url: /Documents/ISCA_22_Poster_48x36.pdf
+
+- year: 2021
+  venue: "MICRO SRC'21"
+  title: "Leveraging Page Size Information to Enhance Data Cache Prefetching"
+  url: "/Documents/Vavouliotis_Poster_SRC21.pdf"
+  authors: "**Georgios Vavouliotis**, Gino Chancon, Lluc Alvarez, Paul V. Gratz, Daniel A. Jimenez, Marc Casas."
+  venue_full: "2021 ACM Student Research Competition (SRC '21), at MICRO '21."
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_Poster_SRC21.pdf
+    - label: Video
+      url: https://www.youtube.com/watch?v=icQByILs23Y&t=20s
+    - label: SRC Certificate
+      url: /Documents/Vavouliotis_Micro_SRC21.pdf
+
+- year: 2021
+  venue: "ACM School'21"
+  title: "Leveraging Page Size Information to Enhance Data Cache Prefetching"
+  url: "/Documents/Vavouliotis_Poster_ACM21.pdf"
+  authors: "**Georgios Vavouliotis**, Gino Chancon, Lluc Alvarez, Paul V. Gratz, Daniel A. Jimenez, Marc Casas."
+  venue_full: "2021 ACM Summer School on HPC Computer Architectures for AI and Dedicated Applications."
+  award: "Best Poster Award"
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_Poster_ACM21.pdf
+    - label: Award
+      url: /Documents/Best-Poster-Award-ACM.pdf
+
+- year: 2020
+  venue: "YArch'20"
+  title: "Cost-Effective Instruction TLB Prefetching"
+  url: "/Documents/Vavouliotis_Poster_YArch.pdf"
+  authors: "**Georgios Vavouliotis**, Lluc Alvarez, Daniel A. Jimenez, Marc Casas."
+  venue_full: "Second Young Architect Workshop (YArch '20), co-located with ASPLOS '20, Lausanne."
+  links:
+    - label: Video
+      url: https://www.youtube.com/watch?v=3AfOSBaUiCw&list=PLe9IED-JzOQRA-C2Tr9RQsODmD_2rtCZ3&index=6&t=218s
+    - label: PDF
+      url: /Documents/Vavouliotis_Poster_YArch.pdf
