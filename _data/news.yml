@@ -26,6 +26,22 @@
 #
 # =============================================================
 
+- year: 2026
+  type: paper
+  venue: "ISCA'26"
+  featured: true
+  text: >
+    <strong>Bumper: Hinting Instruction Usefulness for Robust Unified Caches</strong>
+    accepted at <strong>ISCA 2026</strong>.
+
+- year: 2026
+  type: paper
+  venue: "ISCA'26"
+  featured: true
+  text: >
+    <strong>Enhancing Instruction Prefetching via Cache and TLB Management</strong>
+    accepted at <strong>ISCA 2026</strong>.
+
 - year: 2025
   type: talk
   featured: true

@@ -31,6 +31,46 @@
 #
 # =============================================================
 
+- year: 2026
+  venue: "ISCA'26"
+  type: conference
+  title: "Bumper: Hinting Instruction Usefulness for Robust Unified Caches"
+  url: "#"
+  authors: "**Georgios Vavouliotis**, Tom Rollet, Davide Basilio Bartolini, Boris Grot, Leeor Peled, Yang Lixia."
+  venue_full: "53rd ACM/IEEE International Symposium on Computer Architecture (ISCA '26)."
+  bibtex: |
+    @inproceedings{vavouliotis2026bumper,
+      author       = {Vavouliotis, Georgios and Rollet, Tom and Bartolini, Davide Basilio and
+                      Grot, Boris and Peled, Leeor and Lixia, Yang},
+      title        = {Bumper: Hinting Instruction Usefulness for Robust Unified Caches},
+      booktitle    = {2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)},
+      year         = {2026},
+      organization = {IEEE}
+    }
+  links:
+    # - label: PDF
+    #   url: /Documents/Vavouliotis_ISCA26_Bumper.pdf
+
+- year: 2026
+  venue: "ISCA'26"
+  type: conference
+  title: "Enhancing Instruction Prefetching via Cache and TLB Management"
+  url: "#"
+  authors: "Alexandre Valentin Jamet, **Georgios Vavouliotis**, Martí Torrents, Dimitrios Chasapis, Marc Casas."
+  venue_full: "53rd ACM/IEEE International Symposium on Computer Architecture (ISCA '26)."
+  bibtex: |
+    @inproceedings{jamet2026enhancing,
+      author       = {Jamet, Alexandre Valentin and Vavouliotis, Georgios and Torrents, Mart\'{i} and
+                      Chasapis, Dimitrios and Casas, Marc},
+      title        = {Enhancing Instruction Prefetching via Cache and {TLB} Management},
+      booktitle    = {2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)},
+      year         = {2026},
+      organization = {IEEE}
+    }
+  links:
+    # - label: PDF
+    #   url: /Documents/Vavouliotis_ISCA26_Jamet.pdf
+
 - year: 2025
   venue: "IEEE CAL'25"
   type: journal
