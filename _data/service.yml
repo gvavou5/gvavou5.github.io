@@ -21,6 +21,8 @@ pc:
 
   - conference: "ISCA"
     entries:
+      - label: "ISCA'26"
+        url: "https://www.iscaconf.org/isca2026/"
       - label: "ISCA'25 Industry Track"
         url: "https://www.iscaconf.org/isca2025/committees/pc.php"
       - label: "ISCA'24 Industry Track"
@@ -31,6 +33,16 @@ pc:
       - label: "ASPLOS'25"
         url: "https://www.asplos-conference.org/asplos2025/committee/"
 
+  - conference: "APPT"
+    entries:
+      - label: "APPT'26"
+        url: "https://www.appt-conference.com/2026/organization/program-committee"
+
+  - conference: "Euro-Par"
+    entries:
+      - label: "Euro-Par'24"
+        url: "https://2024.euro-par.org/"
+
 journals:
   - label: "TACO"
     url: "https://dl.acm.org/journal/taco"
@@ -38,6 +50,18 @@ journals:
     url: "https://www.computer.org/csdl/journal/tc"
   - label: "TCAD"
     url: "https://www.computer.org/csdl/journal/tc"
+  - label: "IEEE Access"
+    url: "https://ieeeaccess.ieee.org/"
+  - label: "JPDC"
+    url: "https://www.sciencedirect.com/journal/journal-of-parallel-and-distributed-computing"
+  - label: "IEEE Micro"
+    url: "https://www.computer.org/csdl/magazine/mi"
+  - label: "IEEE ToS"
+    url: "https://www.computer.org/csdl/journal/ts"
+  - label: "IEEE CAL"
+    url: "https://www.computer.org/csdl/journal/ca"
+  - label: "IEEE TNSM"
+    url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028"
 
 organization:
   - year: 2024

@@ -30,10 +30,10 @@ social:
 # --- Research Tags (shown in About section) ---
 research_tags:
   - "Computer Architecture"
-  - "Cache Prefetching/Management"
-  - "Virtual Memory"
   - "ML for Architecture"
-  - "Datacenters"
+  - "Speculation Mechanisms"
+  - "Cache Management"
+  - "Virtual Memory"
 
 # --- Bio (supports HTML) ---
 bio_short: |
@@ -47,3 +47,6 @@ bio_short: |
 baseurl: ""
 url: ""
 permalink: /blog/:year/:month/:day/:title
+
+plugins:
+  - jekyll-sitemap

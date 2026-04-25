@@ -6,11 +6,11 @@
   {% assign all_types = site.data.news | map: "type" %}
   <div class="filter-bar" id="newsFilterBar">
     <button class="filter-btn active" data-filter="all" onclick="filterNews('all', this)">All</button>
-    {% if all_types contains 'paper'  %}<button class="filter-btn" data-filter="paper"  onclick="filterNews('paper',  this)">📄 Paper</button>{% endif %}
-    {% if all_types contains 'award'  %}<button class="filter-btn" data-filter="award"  onclick="filterNews('award',  this)">🏆 Award</button>{% endif %}
-    {% if all_types contains 'talk'   %}<button class="filter-btn" data-filter="talk"   onclick="filterNews('talk',   this)">🎤 Talk</button>{% endif %}
-    {% if all_types contains 'poster' %}<button class="filter-btn" data-filter="poster" onclick="filterNews('poster', this)">🖼️ Poster</button>{% endif %}
-    {% if all_types contains 'other'  %}<button class="filter-btn" data-filter="other"  onclick="filterNews('other',  this)">📌 Other</button>{% endif %}
+    {% if all_types contains 'paper'  %}<button class="filter-btn" data-filter="paper"  onclick="filterNews('paper',  this)">Paper</button>{% endif %}
+    {% if all_types contains 'award'  %}<button class="filter-btn" data-filter="award"  onclick="filterNews('award',  this)">Award</button>{% endif %}
+    {% if all_types contains 'talk'   %}<button class="filter-btn" data-filter="talk"   onclick="filterNews('talk',   this)">Talk</button>{% endif %}
+    {% if all_types contains 'poster' %}<button class="filter-btn" data-filter="poster" onclick="filterNews('poster', this)">Poster</button>{% endif %}
+    {% if all_types contains 'other'  %}<button class="filter-btn" data-filter="other"  onclick="filterNews('other',  this)">Other</button>{% endif %}
   </div>
 
   <div class="news-list" id="newsList">
@@ -25,11 +25,11 @@
       <div class="news-body">
         {{ item.text }}
         {% if item.types %}
-          {% for bt in item.types %}<span class="news-badge badge-{{ bt }}">{% case bt %}{% when 'award' %}🏆 Award{% when 'paper' %}📄 Paper{% when 'talk' %}🎤 Talk{% when 'poster' %}🖼️ Poster{% else %}📌 Note{% endcase %}</span>{% endfor %}
+          {% for bt in item.types %}<span class="news-badge badge-{{ bt }}">{% case bt %}{% when 'award' %}Award{% when 'paper' %}Paper{% when 'talk' %}Talk{% when 'poster' %}Poster{% else %}Note{% endcase %}</span>{% endfor %}
         {% else %}
-          <span class="news-badge badge-{{ item.type }}">{% case item.type %}{% when 'award' %}🏆 Award{% when 'paper' %}📄 Paper{% when 'service' %}🎓 Service{% when 'talk' %}🎤 Talk{% when 'poster' %}🖼️ Poster{% else %}📌 Note{% endcase %}</span>
+          <span class="news-badge badge-{{ item.type }}">{% case item.type %}{% when 'award' %}Award{% when 'paper' %}Paper{% when 'service' %}Service{% when 'talk' %}Talk{% when 'poster' %}Poster{% else %}Note{% endcase %}</span>
         {% endif %}
-        {% if item.venue %}<span class="news-badge badge-venue">{{ item.venue }}</span>{% endif %}
+        {% if item.venue %}<span class="news-badge badge-venue badge-venue-dyn">{{ item.venue }}</span>{% endif %}
       </div>
     </div>
     {% endfor %}

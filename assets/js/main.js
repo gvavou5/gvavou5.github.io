@@ -59,16 +59,90 @@ function filterNews(type, btn) {
 
 applyNewsDisplay();
 
-/* --- Papers: year filter --- */
-function filterPapers(year, btn) {
-  document.querySelectorAll('#papersFilterBar .filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+/* --- Papers: combined year + type filter --- */
+let currentYear    = 'all';
+let currentPubType = 'all';
+
+function applyPaperFilters() {
+  document.querySelectorAll('#publications .paper-card').forEach(card => {
+    const group     = card.closest('.year-group');
+    const yearMatch = currentYear === 'all' || group.dataset.year === currentYear;
+    const typeMatch = currentPubType === 'all' || card.dataset.pubType === currentPubType;
+    card.classList.toggle('hidden', !(yearMatch && typeMatch));
+  });
 
   document.querySelectorAll('#publications .year-group').forEach(group => {
-    const matches = year === 'all' || group.dataset.year === String(year);
-    group.classList.toggle('hidden', !matches);
+    const yearMatch = currentYear === 'all' || group.dataset.year === currentYear;
+    if (!yearMatch) {
+      group.classList.add('hidden');
+      return;
+    }
+    const hasVisible = [...group.querySelectorAll('.paper-card')].some(c => !c.classList.contains('hidden'));
+    group.classList.toggle('hidden', !hasVisible);
   });
 }
+
+function filterPapers(year, btn) {
+  document.querySelectorAll('#papersYearFilterBar .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentYear = String(year);
+  applyPaperFilters();
+}
+
+function filterPapersByType(type, btn) {
+  document.querySelectorAll('#papersTypeFilterBar .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentPubType = type;
+  applyPaperFilters();
+}
+
+/* --- BibTeX toggle & copy --- */
+function toggleBibtex(btn) {
+  const card      = btn.closest('.paper-card');
+  const bibtexDiv = card.querySelector('.paper-bibtex');
+  const isOpen    = bibtexDiv.classList.toggle('open');
+  if (isOpen) {
+    btn.innerHTML = '<i class="fa-solid fa-xmark"></i> Close';
+  } else {
+    btn.innerHTML = '<i class="fa-solid fa-quote-left"></i> BibTeX';
+  }
+}
+
+function copyBibtex(btn) {
+  const pre = btn.closest('.paper-bibtex').querySelector('pre');
+  navigator.clipboard.writeText(pre.textContent.trim()).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 1800);
+  });
+}
+
+/* --- Conference venue badge coloring --- */
+(function colorVenueBadges() {
+  const CONF_COLORS = {
+    'ASPLOS': 'badge-conf-asplos',
+    'HPCA':   'badge-conf-hpca',
+    'MICRO':  'badge-conf-micro',
+    'ISCA':   'badge-conf-isca',
+    'IPDPS':  'badge-conf-ipdps',
+    'ISMM':   'badge-conf-ismm',
+    'CAL':    'badge-conf-cal',
+    'YARCH':  'badge-conf-yarch',
+  };
+  document.querySelectorAll('.badge-venue-dyn').forEach(badge => {
+    const text = badge.textContent.trim().toUpperCase();
+    const match = text.match(/^([A-Z]+)/);
+    if (!match) return;
+    const cls = CONF_COLORS[match[1]];
+    if (cls) {
+      badge.classList.remove('badge-venue');
+      badge.classList.add(cls);
+    }
+  });
+})();
 
 /* --- Navbar: active section on scroll --- */
 const SECTIONS = ['about', 'news', 'publications', 'service', 'contact'];
@@ -121,7 +195,6 @@ function copyEmail(email, card) {
     .then(r => r.json())
     .then(data => {
       const html = data.contents || '';
-      // Citation count is the first .gsc_rsb_std cell in the stats table
       const match = html.match(/class="gsc_rsb_std"[^>]*>([\d,]+)/);
       if (match) {
         badge.textContent = match[1] + ' citations';

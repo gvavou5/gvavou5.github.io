@@ -2,7 +2,7 @@
   <div class="about-grid">
 
     <div class="about-photo-wrap">
-      <img class="about-photo" src="{{ site.author.photo }}" alt="{{ site.author.name }}">
+      <img class="about-photo" src="{{ site.author.photo }}" alt="{{ site.author.name }}" loading="lazy">
       <div class="social-links">
         <a class="social-link" href="{{ site.social.linkedin }}" target="_blank">
           <i class="fa-brands fa-linkedin-in"></i> LinkedIn
@@ -15,11 +15,12 @@
           <i class="fa-brands fa-google-scholar"></i> Scholar
           <span class="scholar-count" id="scholarCount"></span>
         </a>
-        <a class="social-link" href="mailto:{{ site.author.email_personal }}">
-          <i class="fa-solid fa-envelope"></i> Email
-        </a>
         <a class="social-link" href="{{ site.social.dblp }}" target="_blank">
           <i class="fa-solid fa-database"></i> DBLP
+        </a>
+
+        <a class="social-link" href="mailto:{{ site.author.email_personal }}">
+          <i class="fa-solid fa-envelope"></i> Email
         </a>
 
       </div>
