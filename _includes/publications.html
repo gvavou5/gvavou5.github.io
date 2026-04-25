@@ -4,7 +4,7 @@
   </div>
 
   <!-- Year filter buttons -->
-  <div class="filter-bar" id="papersFilterBar">
+  <div class="filter-bar" id="papersYearFilterBar">
     <button class="filter-btn active" data-year="all" onclick="filterPapers('all', this)">All Years</button>
     {% assign years = site.data.papers | map: "year" | uniq | sort | reverse %}
     {% for year in years %}
@@ -12,6 +12,15 @@
         {{ year }}
       </button>
     {% endfor %}
+  </div>
+
+  <!-- Type filter buttons -->
+  <div class="filter-bar pub-type-filter-bar" id="papersTypeFilterBar">
+    <button class="filter-btn active" data-pub-type="all" onclick="filterPapersByType('all', this)">All Types</button>
+    {% assign all_types = site.data.papers | map: "type" | uniq %}
+    {% if all_types contains 'conference' %}<button class="filter-btn" data-pub-type="conference" onclick="filterPapersByType('conference', this)">Conference Papers</button>{% endif %}
+    {% if all_types contains 'journal'    %}<button class="filter-btn" data-pub-type="journal"    onclick="filterPapersByType('journal',    this)">Journals</button>{% endif %}
+    {% if all_types contains 'other'      %}<button class="filter-btn" data-pub-type="other"      onclick="filterPapersByType('other',      this)">Others</button>{% endif %}
   </div>
 
   <!-- Papers grouped by year -->
@@ -22,13 +31,14 @@
 
     {% for paper in site.data.papers %}
       {% if paper.year == year %}
-      <div class="paper-card{% if paper.award %} paper-award{% endif %}">
+      {% assign paper_type = paper.type | default: 'conference' %}
+      <div class="paper-card{% if paper.award %} paper-award{% endif %}" data-pub-type="{{ paper_type }}">
 
         <div class="paper-top-row">
           <span class="paper-venue-badge">{{ paper.venue }}</span>
           {% if paper.award %}
           <span class="paper-award-badge">
-            <i class="fa-solid fa-trophy"></i> {{ paper.award }}
+            {{ paper.award }}
           </span>
           {% endif %}
         </div>
@@ -47,7 +57,19 @@
           {% for link in paper.links %}
           <a class="paper-link" href="{{ link.url }}" target="_blank">{{ link.label }}</a>
           {% endfor %}
+          {% if paper.bibtex %}
+          <button class="paper-link paper-bibtex-btn" onclick="toggleBibtex(this)">
+            <i class="fa-solid fa-quote-left"></i> BibTeX
+          </button>
+          {% endif %}
         </div>
+
+        {% if paper.bibtex %}
+        <div class="paper-bibtex">
+          <button class="paper-bibtex-copy" onclick="copyBibtex(this)">Copy</button>
+          <pre>{{ paper.bibtex }}</pre>
+        </div>
+        {% endif %}
 
       </div>
       {% endif %}
