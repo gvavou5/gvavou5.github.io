@@ -3,65 +3,64 @@
 # =============================================================
 
 pc:
-  - conference: "HPCA"
+  - year: 2026
     entries:
       - label: "HPCA'26"
         url: "https://hpca-conf.org/2026/program-committee/"
-      - label: "HPCA'25"
-        url: "https://hpca-conf.org/2025/program-committee/"
-      - label: "HPCA'24 AE"
-        url: "https://www.hpca-conf.org/2024/submit/artifacts.php"
-
-  - conference: "MICRO"
-    entries:
-      - label: "MICRO'25"
-        url: "https://www.microarch.org/micro58/committees/pc.php"
-      - label: "MICRO'24"
-        url: "https://microarch.org/micro57/committees/pc.php"
-
-  - conference: "ISCA"
-    entries:
       - label: "ISCA'26"
         url: "https://www.iscaconf.org/isca2026/"
-      - label: "ISCA'25 Industry Track"
-        url: "https://www.iscaconf.org/isca2025/committees/pc.php"
-      - label: "ISCA'24 Industry Track"
-        url: "https://www.iscaconf.org/isca2024/committees/pc.php"
-
-  - conference: "ASPLOS"
-    entries:
-      - label: "ASPLOS'25"
-        url: "https://www.asplos-conference.org/asplos2025/committee/"
-
-  - conference: "APPT"
-    entries:
       - label: "APPT'26"
         url: "https://www.appt-conference.com/2026/organization/program-committee"
 
-  - conference: "Euro-Par"
+  - year: 2025
     entries:
+      - label: "MICRO'25"
+        url: "https://www.microarch.org/micro58/committees/pc.php"
+      - label: "HPCA'25"
+        url: "https://hpca-conf.org/2025/program-committee/"
+      - label: "ISCA'25 Industry Track"
+        url: "https://www.iscaconf.org/isca2025/committees/pc.php"
+      - label: "ASPLOS'25"
+        url: "https://www.asplos-conference.org/asplos2025/committee/"
+
+  - year: 2024
+    entries:
+      - label: "MICRO'24"
+        url: "https://microarch.org/micro57/committees/pc.php"
+      - label: "HPCA'24 AE"
+        url: "https://www.hpca-conf.org/2024/submit/artifacts.php"
+      - label: "ISCA'24 Industry Track"
+        url: "https://www.iscaconf.org/isca2024/committees/pc.php"
       - label: "Euro-Par'24"
         url: "https://2024.euro-par.org/"
 
 journals:
-  - label: "TACO"
-    url: "https://dl.acm.org/journal/taco"
-  - label: "TC"
-    url: "https://www.computer.org/csdl/journal/tc"
-  - label: "TCAD"
-    url: "https://www.computer.org/csdl/journal/tc"
-  - label: "IEEE Access"
-    url: "https://ieeeaccess.ieee.org/"
-  - label: "JPDC"
-    url: "https://www.sciencedirect.com/journal/journal-of-parallel-and-distributed-computing"
-  - label: "IEEE Micro"
-    url: "https://www.computer.org/csdl/magazine/mi"
-  - label: "IEEE ToS"
-    url: "https://www.computer.org/csdl/journal/ts"
-  - label: "IEEE CAL"
-    url: "https://www.computer.org/csdl/journal/ca"
-  - label: "IEEE TNSM"
-    url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028"
+  - publisher: "ACM"
+    entries:
+      - label: "TACO"
+        url: "https://dl.acm.org/journal/taco"
+
+  - publisher: "IEEE"
+    entries:
+      - label: "TC"
+        url: "https://www.computer.org/csdl/journal/tc"
+      - label: "TCAD"
+        url: "https://www.computer.org/csdl/journal/tc"
+      - label: "IEEE Access"
+        url: "https://ieeeaccess.ieee.org/"
+      - label: "IEEE Micro"
+        url: "https://www.computer.org/csdl/magazine/mi"
+      - label: "IEEE ToS"
+        url: "https://www.computer.org/csdl/journal/ts"
+      - label: "IEEE CAL"
+        url: "https://www.computer.org/csdl/journal/ca"
+      - label: "IEEE TNSM"
+        url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4275028"
+
+  - publisher: "Elsevier"
+    entries:
+      - label: "JPDC"
+        url: "https://www.sciencedirect.com/journal/journal-of-parallel-and-distributed-computing"
 
 organization:
   - year: 2024

@@ -3,7 +3,7 @@
 # =============================================================
 
 title: Georgios Vavouliotis
-description: Senior Researcher at Huawei Research Center Switzerland. Computer Architecture, Prefetching, Virtual Memory.
+description: "Senior Researcher at Huawei Research Center Switzerland, working on computer architecture — cache management, prefetching, and virtual memory."
 
 # --- Personal Info ---
 author:
@@ -45,7 +45,7 @@ bio_short: |
 
 # --- Jekyll Build Settings (don't touch) ---
 baseurl: ""
-url: ""
+url: "https://gvavou5.github.io"
 permalink: /blog/:year/:month/:day/:title
 
 plugins:

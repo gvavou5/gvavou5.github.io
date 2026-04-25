@@ -5,14 +5,30 @@
 
   <div class="service-block">
     <div class="service-role-label">
+      <i class="fa-solid fa-sitemap"></i> Organization
+    </div>
+    <div class="service-tags">
+      {% for item in site.data.service.organization %}
+      <a class="service-tag" href="{{ item.url }}" target="_blank">
+        {{ item.role }} · {{ item.venue }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="service-block">
+    <div class="service-role-label">
       <i class="fa-solid fa-users"></i> Program Committee
     </div>
     <div class="service-pc-grid">
       {% for group in site.data.service.pc %}
-      <div class="service-tags">
-        {% for entry in group.entries %}
-        <a class="service-tag" href="{{ entry.url }}" target="_blank">{{ entry.label }}</a>
-        {% endfor %}
+      <div class="service-pc-row">
+        <div class="service-pc-conf">{{ group.year }}</div>
+        <div class="service-tags">
+          {% for entry in group.entries %}
+          <a class="service-tag" href="{{ entry.url }}" target="_blank">{{ entry.label }}</a>
+          {% endfor %}
+        </div>
       </div>
       {% endfor %}
     </div>
@@ -22,22 +38,16 @@
     <div class="service-role-label">
       <i class="fa-solid fa-book-open"></i> Journals
     </div>
-    <div class="service-tags">
-      {% for item in site.data.service.journals %}
-      <a class="service-tag" href="{{ item.url }}" target="_blank">{{ item.label }}</a>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="service-block">
-    <div class="service-role-label">
-      <i class="fa-solid fa-screwdriver-wrench"></i> Organization
-    </div>
-    <div class="service-tags">
-      {% for item in site.data.service.organization %}
-      <a class="service-tag" href="{{ item.url }}" target="_blank">
-        {{ item.role }} · {{ item.venue }}
-      </a>
+    <div class="service-pc-grid">
+      {% for group in site.data.service.journals %}
+      <div class="service-pc-row">
+        <div class="service-pc-conf">{{ group.publisher }}</div>
+        <div class="service-tags">
+          {% for entry in group.entries %}
+          <a class="service-tag" href="{{ entry.url }}" target="_blank">{{ entry.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
       {% endfor %}
     </div>
   </div>

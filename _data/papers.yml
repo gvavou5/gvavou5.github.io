@@ -51,6 +51,10 @@
   links:
     # - label: PDF
     #   url: /Documents/Vavouliotis_ISCA26_Bumper.pdf
+    # - label: Slides
+    #   url: /Documents/Vavouliotis_ISCA26_Bumper_slides.pdf
+    # - label: Talk
+    #   url: https://www.youtube.com/watch?v=PLACEHOLDER
 
 - year: 2026
   venue: "ISCA'26"
@@ -71,6 +75,10 @@
   links:
     # - label: PDF
     #   url: /Documents/Vavouliotis_ISCA26_Jamet.pdf
+    # - label: Slides
+    #   url: /Documents/Vavouliotis_ISCA26_Jamet_slides.pdf
+    # - label: Talk
+    #   url: https://www.youtube.com/watch?v=PLACEHOLDER
 
 - year: 2025
   venue: "IEEE CAL'25"
