@@ -34,6 +34,7 @@
 - year: 2026
   venue: "ISCA'26"
   type: conference
+  spotlight: true
   title: "Bumper: Hinting Instruction Usefulness for Robust Unified Caches"
   url: "#"
   authors: "**Georgios Vavouliotis**, Tom Rollet, Davide Basilio Bartolini, Boris Grot, Leeor Peled, Yang Lixia."
@@ -93,6 +94,7 @@
 - year: 2025
   venue: "ASPLOS'25"
   type: conference
+  spotlight: true
   title: "Instruction-Aware Cooperative TLB and Cache Replacement Policies"
   url: "https://dl.acm.org/doi/10.1145/3669940.3707247"
   authors: "**Georgios Vavouliotis**\\*, Dimitrios Chasapis\\*, Daniel A. Jimenez, Marc Casas. *(\\*Equally contributed)*"
@@ -115,6 +117,7 @@
 - year: 2025
   venue: "HPCA'25"
   type: conference
+  spotlight: true
   title: "To Cross, or Not to Cross Pages for Prefetching?"
   url: "https://ieeexplore.ieee.org/abstract/document/10946723"
   authors: "**Georgios Vavouliotis**, Marti Torrents, Boris Grot, Kleovoulos Kalaitzidis, Leeor Peled, Marc Casas."
@@ -208,6 +211,7 @@
 - year: 2022
   venue: "MICRO'22"
   type: conference
+  spotlight: true
   title: "Page Size Aware Cache Prefetching"
   url: "https://ieeexplore.ieee.org/document/9923823"
   authors: "**Georgios Vavouliotis**, Gino Chancon, Lluc Alvarez, Paul V. Gratz, Daniel A. Jimenez, Marc Casas."
@@ -231,6 +235,7 @@
 - year: 2021
   venue: "MICRO'21"
   type: conference
+  spotlight: true
   title: "Morrigan: A Composite Instruction TLB Prefetcher"
   url: "https://dl.acm.org/doi/10.1145/3466752.3480049"
   authors: "**Georgios Vavouliotis**, Lluc Alvarez, Boris Grot, Daniel A. Jimenez, Marc Casas."
@@ -257,6 +262,7 @@
 - year: 2021
   venue: "ISCA'21"
   type: conference
+  spotlight: true
   title: "Exploiting Page Table Locality for Agile TLB Prefetching"
   url: "https://ieeexplore.ieee.org/document/9499825"
   authors: "**Georgios Vavouliotis**, Lluc Alvarez, Vasileios Karakostas, Konstantinos Nikas, Nectarios Kozyris, Daniel A. Jimenez, Marc Casas."

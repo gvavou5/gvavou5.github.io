@@ -16,10 +16,11 @@
 
   <!-- Type filter buttons -->
   <div class="filter-bar pub-type-filter-bar" id="papersTypeFilterBar">
-    <button class="filter-btn active" data-pub-type="all" onclick="filterPapersByType('all', this)">All Types</button>
+    <button class="filter-btn active" data-pub-type="all" onclick="filterPapersByType('all', this)">All Papers</button>
+    <button class="filter-btn filter-btn-spotlight" data-pub-type="spotlight" onclick="filterPapersByType('spotlight', this)"><i class="fa-solid fa-star"></i> Spotlight</button>
     {% assign all_types = site.data.papers | map: "type" | uniq %}
     {% if all_types contains 'conference' %}<button class="filter-btn" data-pub-type="conference" onclick="filterPapersByType('conference', this)">Conference Papers</button>{% endif %}
-    {% if all_types contains 'journal'    %}<button class="filter-btn" data-pub-type="journal"    onclick="filterPapersByType('journal',    this)">Journals</button>{% endif %}
+    {% if all_types contains 'journal'    %}<button class="filter-btn" data-pub-type="journal"    onclick="filterPapersByType('journal',    this)">Journal Papers</button>{% endif %}
     {% if all_types contains 'other'      %}<button class="filter-btn" data-pub-type="other"      onclick="filterPapersByType('other',      this)">Others</button>{% endif %}
   </div>
 
@@ -32,19 +33,24 @@
     {% for paper in site.data.papers %}
       {% if paper.year == year %}
       {% assign paper_type = paper.type | default: 'conference' %}
-      <div class="paper-card{% if paper.award %} paper-award{% endif %}" data-pub-type="{{ paper_type }}">
+      <div class="paper-card{% if paper.award %} paper-award{% endif %}" data-pub-type="{{ paper_type }}" data-spotlight="{{ paper.spotlight | default: false }}">
 
         <div class="paper-top-row">
-          <span class="paper-venue-badge">{{ paper.venue }}</span>
+          <div class="paper-top-left">
+            <span class="paper-venue-badge">{{ paper.venue }}</span>
+            {% if paper.spotlight %}<span class="paper-spotlight-badge"><i class="fa-solid fa-star"></i> Spotlight</span>{% endif %}
+          </div>
           {% if paper.award %}
-          <span class="paper-award-badge">
-            {{ paper.award }}
-          </span>
+          <span class="paper-award-badge">{{ paper.award }}</span>
           {% endif %}
         </div>
 
         <div class="paper-title">
+          {% if paper.url and paper.url != "#" %}
           <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
+          {% else %}
+          {{ paper.title }}
+          {% endif %}
         </div>
 
         <div class="paper-authors">

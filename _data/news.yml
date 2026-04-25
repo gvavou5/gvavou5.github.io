@@ -17,12 +17,11 @@
 #      <a href="https://..." target="_blank">Paper Title</a> accepted at <strong>VENUE 2026</strong>.
 #  ---CUT---
 #
-#  TYPE OPTIONS (controls the badge color):
-#    award   → gold badge  🏆
-#    paper   → blue badge  📄
-#    service → green badge 🎓
-#    talk    → purple badge 🎤
-#    other   → grey badge  📌
+#  FORMATS BY TYPE:
+#    paper   → <a href="...">Title</a> accepted at <strong>VENUE YEAR</strong>.
+#    talk    → Talk on <strong>"Title"</strong> at <a href="...">Venue</a>.
+#    award (paper)    → <a href="...">Title</a> received the <a href="...">Award Name</a> at VENUE'YY.
+#    award (personal) → Received the <strong>Award Name</strong> from <strong>Organization</strong>.
 #
 # =============================================================
 
@@ -46,7 +45,7 @@
   type: talk
   featured: true
   text: >
-    I'll give a talk on <strong>Interaction between Virtual Memory and Hardware Prefetching</strong>
+    Talk on <strong>"Interaction between Virtual Memory and Hardware Prefetching"</strong>
     at the <a href="https://cmu-safari.github.io/Virtuoso-Workshop-MICRO25/" target="_blank">Virtuoso Workshop</a>.
 
 - year: 2025
@@ -69,13 +68,13 @@
   type: award
   featured: true
   text: >
-    Received the <strong>Future Star Award</strong> from <strong>Huawei</strong> for research contributions.
+    Received the <strong>Future Star Award</strong> from <strong>Huawei</strong>.
 
 - year: 2025
   type: award
   featured: true
   text: >
-    Received the <strong>Innovation Award</strong> from <strong>Huawei</strong> for contributions to performance features.
+    Received the <strong>Innovation Award</strong> from <strong>Huawei</strong>.
 
 - year: 2025
   type: paper
@@ -96,7 +95,7 @@
   featured: true
   text: >
     <a href="https://www.computer.org/csdl/proceedings-article/hpca/2024/931300a528/1VOAAUAW328" target="_blank">A Two Level
-    Neural Approach…</a> received the
+    Neural Approach Combining Off-Chip Prediction with Adaptive Prefetch Filtering</a> received the
     <a href="/Documents/Hipeac_Award_HPCA24_Paper.pdf" target="_blank">HiPEAC 2024 Paper Award</a>.
 
 - year: 2024
@@ -110,11 +109,11 @@
   type: talk
   featured: false
   text: >
-    Talk on <strong>Microarchitectural Prediction and Prefetching in Virtual Memory Systems</strong>
+    Talk on <strong>"Microarchitectural Prediction and Prefetching in Virtual Memory Systems"</strong>
     at <strong>AMD Research</strong>.
 
 - year: 2024
-  type: award
+  type: other
   featured: false
   text: >
     Promoted to <strong>Senior Researcher</strong> at <strong>Huawei Research Center Switzerland</strong>.
@@ -139,7 +138,7 @@
   type: award
   featured: false
   text: >
-    My Ph.D. dissertation <strong>"Advanced Hardware Prefetching in Virtual Memory Systems"</strong>
+    PhD dissertation <strong>"Advanced Hardware Prefetching in Virtual Memory Systems"</strong>
     received the <strong>Cum Laude Award</strong>.
 
 - year: 2023
@@ -175,7 +174,7 @@
   type: talk
   featured: false
   text: >
-    Talk on <strong>Hardware Prefetching in Virtual Memory Systems</strong> at the
+    Talk on <strong>"Hardware Prefetching in Virtual Memory Systems"</strong> at the
     <a href="https://www.ece.ntua.gr/en/article/579" target="_blank">6th Computing Systems Research Day</a> in Athens.
 
 - year: 2023
@@ -201,31 +200,20 @@
     <a href="https://ieeexplore.ieee.org/document/9923823" target="_blank">Page Size Aware Cache Prefetching</a>
     accepted at <strong>MICRO 2022</strong>.
 
-# - year: 2022
-#   type: award
-#   featured: false
-#   text: >
-#     Received the <strong>MICRO'22 Student Travel Grant</strong> and attended MICRO'22 in Chicago.
-
 - year: 2022
-  type: poster
+  type: other
   featured: false
   text: >
-    Presented a <a href="/Documents/ISCA_22_Poster_48x36.pdf" target="_blank">poster</a> of our ISCA'21 paper
+    Presented a <a href="/Documents/ISCA_22_Poster_48x36.pdf" target="_blank">poster</a> of
     <a href="https://ieeexplore.ieee.org/document/9499825" target="_blank">Exploiting Page Table Locality for
-    Agile TLB Prefetching</a> at ISCA'22 in New York.
-
-# - year: 2022
-#   type: award
-#   featured: false
-#   text: >
-#     Received the <strong>ISCA'22 Student Travel Grant</strong> and attended ISCA'22 in New York.
+    Agile TLB Prefetching</a> at ISCA'22, New York.
 
 - year: 2022
   type: award
   featured: false
   text: >
-    MICRO'21 paper <em>Morrigan</em> received the
+    <a href="https://dl.acm.org/doi/10.1145/3466752.3480049" target="_blank">Morrigan: A Composite Instruction
+    TLB Prefetcher</a> received the
     <a href="/Documents/Hipeac_Award_MICRO21_Paper.pdf" target="_blank">HiPEAC 2021 Paper Award</a>.
 
 - year: 2022
@@ -240,17 +228,11 @@
   type: talk
   featured: false
   text: >
-    Talk on <a href="https://dl.acm.org/doi/10.1145/3466752.3480049" target="_blank">Morrigan</a>
+    Talk on <strong>"Morrigan: A Composite Instruction TLB Prefetcher"</strong>
     at <strong>Huawei Zurich</strong>.
 
-# - year: 2021
-#   type: other
-#   featured: false
-#   text: >
-#     Joined <strong>Huawei Zurich Research Center</strong> for a 6-month internship on memory management.
-
 - year: 2021
-  type: poster
+  type: other
   featured: false
   text: >
     <a href="/Documents/Vavouliotis_Poster_SRC21.pdf" target="_blank">Leveraging Page Size Information to
@@ -259,16 +241,7 @@
     at MICRO'21.
 
 - year: 2021
-  type: paper
-  venue: "MICRO'21"
-  featured: false
-  text: >
-    <a href="https://dl.acm.org/doi/10.1145/3466752.3480049" target="_blank">Morrigan: A Composite Instruction
-    TLB Prefetcher</a> accepted at <strong>MICRO 2021</strong>.
-
-- year: 2021
   type: award
-  types: [award, poster]
   featured: false
   text: >
     <a href="/Documents/Vavouliotis_Poster_ACM21.pdf" target="_blank">Leveraging Page Size Information to
@@ -276,11 +249,13 @@
     <a href="/Documents/Best-Poster-Award-ACM.pdf" target="_blank">Best Poster Award</a>
     at the 2021 ACM Summer School on HPC Architectures for AI and Dedicated Applications.
 
-# - year: 2021
-#   type: other
-#   featured: false
-#   text: >
-#     Attended the <strong>2021 ACM Summer School on HPC Architectures for AI and Dedicated Applications</strong>.
+- year: 2021
+  type: paper
+  venue: "MICRO'21"
+  featured: false
+  text: >
+    <a href="https://dl.acm.org/doi/10.1145/3466752.3480049" target="_blank">Morrigan: A Composite Instruction
+    TLB Prefetcher</a> accepted at <strong>MICRO 2021</strong>.
 
 - year: 2021
   type: paper
@@ -294,8 +269,7 @@
   type: talk
   featured: false
   text: >
-    Presentation of <a href="/Documents/Vavouliotis_Poster_YArch.pdf" target="_blank">Cost-Effective Instruction
-    TLB Prefetching</a> at YArch 2020 available on
+    Talk on <strong>"Cost-Effective Instruction TLB Prefetching"</strong> at YArch 2020, available on
     <a href="https://www.youtube.com/watch?v=3AfOSBaUiCw&list=PLe9IED-JzOQRA-C2Tr9RQsODmD_2rtCZ3&index=6&t=218s" target="_blank">YouTube</a>.
 
 - year: 2020
@@ -303,10 +277,4 @@
   featured: false
   text: >
     <a href="/Documents/Vavouliotis_Poster_YArch.pdf" target="_blank">Cost-Effective Instruction TLB
-    Prefetching</a> accepted at <strong>YArch 2020</strong> Workshop (co-located with ASPLOS'20).
-
-# - year: 2019
-#   type: award
-#   featured: false
-#   text: >
-#     Received the <strong>FPI Doctoral Fellowship</strong> from the Spanish Government (MINECO).
+    Prefetching</a> accepted at <strong>YArch 2020</strong>.

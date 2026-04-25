@@ -250,6 +250,12 @@ section:last-of-type { padding-bottom: 40px; }
 .filter-btn:hover, .filter-btn.active {
   background: var(--accent); border-color: var(--accent); color: white;
 }
+.filter-btn-spotlight {
+  color: var(--gold); border-color: var(--gold-border); background: var(--gold-bg);
+}
+.filter-btn-spotlight:hover, .filter-btn-spotlight.active {
+  background: var(--gold); border-color: var(--gold); color: white;
+}
 .toggle-btn {
   margin-top: 14px;
   background: none; border: 1px solid var(--border-dark);
@@ -313,6 +319,19 @@ section:last-of-type { padding-bottom: 40px; }
 /* =============================================================
    PUBLICATIONS SECTION
    ============================================================= */
+/* Spotlight badge */
+.paper-top-left {
+  display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+}
+.paper-spotlight-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.7rem; font-weight: 700;
+  color: var(--gold); background: var(--gold-bg);
+  border: 1px solid var(--gold-border);
+  padding: 2px 9px; border-radius: 10px;
+}
+.paper-spotlight-badge i { font-size: 0.6rem; }
+
 .pub-type-filter-bar { margin-top: -12px; margin-bottom: 24px; }
 
 .year-group { margin-bottom: 36px; }
@@ -693,6 +712,8 @@ section { animation: fadeUp 0.45s ease both; }
   body { color-scheme: dark; }
 
   nav { background: rgba(15,15,26,0.92); }
+
+  .nav-penguin { filter: brightness(0.72) drop-shadow(0 1px 2px rgba(0,0,0,0.3)); }
 
   /* About photo — replace hardcoded white ring */
   .about-photo {

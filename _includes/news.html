@@ -25,9 +25,9 @@
       <div class="news-body">
         {{ item.text }}
         {% if item.types %}
-          {% for bt in item.types %}<span class="news-badge badge-{{ bt }}">{% case bt %}{% when 'award' %}Award{% when 'paper' %}Paper{% when 'talk' %}Talk{% when 'poster' %}Poster{% else %}Note{% endcase %}</span>{% endfor %}
+          {% for bt in item.types %}{% unless bt == 'other' %}<span class="news-badge badge-{{ bt }}">{% case bt %}{% when 'award' %}Award{% when 'paper' %}Paper{% when 'talk' %}Talk{% when 'poster' %}Poster{% endcase %}</span>{% endunless %}{% endfor %}
         {% else %}
-          <span class="news-badge badge-{{ item.type }}">{% case item.type %}{% when 'award' %}Award{% when 'paper' %}Paper{% when 'service' %}Service{% when 'talk' %}Talk{% when 'poster' %}Poster{% else %}Note{% endcase %}</span>
+          {% unless item.type == 'other' %}<span class="news-badge badge-{{ item.type }}">{% case item.type %}{% when 'award' %}Award{% when 'paper' %}Paper{% when 'service' %}Service{% when 'talk' %}Talk{% when 'poster' %}Poster{% endcase %}</span>{% endunless %}
         {% endif %}
         {% if item.venue %}<span class="news-badge badge-venue badge-venue-dyn">{{ item.venue }}</span>{% endif %}
       </div>

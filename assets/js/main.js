@@ -65,9 +65,10 @@ let currentPubType = 'all';
 
 function applyPaperFilters() {
   document.querySelectorAll('#publications .paper-card').forEach(card => {
-    const group     = card.closest('.year-group');
-    const yearMatch = currentYear === 'all' || group.dataset.year === currentYear;
-    const typeMatch = currentPubType === 'all' || card.dataset.pubType === currentPubType;
+    const group          = card.closest('.year-group');
+    const yearMatch      = currentYear === 'all' || group.dataset.year === currentYear;
+    const typeMatch      = currentPubType === 'all'
+                        || (currentPubType === 'spotlight' ? card.dataset.spotlight === 'true' : card.dataset.pubType === currentPubType);
     card.classList.toggle('hidden', !(yearMatch && typeMatch));
   });
 
