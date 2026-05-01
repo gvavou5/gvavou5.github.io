@@ -6,7 +6,7 @@
   <div class="contact-grid">
     <button class="contact-card" onclick="copyEmail('{{ site.author.email_personal }}', this)">
       <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-      <div>
+      <div class="contact-text">
         <div class="contact-label">Personal Email</div>
         <div class="contact-value">{{ site.author.email_personal }}</div>
       </div>
@@ -15,7 +15,7 @@
 
     <button class="contact-card" onclick="copyEmail('{{ site.author.email_work }}', this)">
       <div class="contact-icon"><i class="fa-solid fa-building"></i></div>
-      <div>
+      <div class="contact-text">
         <div class="contact-label">Work Email</div>
         <div class="contact-value">{{ site.author.email_work }}</div>
       </div>
@@ -24,7 +24,7 @@
 
     <a class="contact-card" href="{{ site.social.linkedin }}" target="_blank">
       <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-      <div>
+      <div class="contact-text">
         <div class="contact-label">LinkedIn</div>
         <div class="contact-value">georgiosvavouliotis</div>
       </div>
@@ -32,7 +32,7 @@
 
     <a class="contact-card" href="{{ site.social.scholar }}" target="_blank">
       <div class="contact-icon"><i class="fa-brands fa-google-scholar"></i></div>
-      <div>
+      <div class="contact-text">
         <div class="contact-label">Google Scholar</div>
         <div class="contact-value">{{ site.author.name }}</div>
       </div>
@@ -40,7 +40,7 @@
 
     <a class="contact-card" href="{{ site.author.office_map }}" target="_blank">
       <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-      <div>
+      <div class="contact-text">
         <div class="contact-label">Office</div>
         <div class="contact-value">{{ site.author.office }}</div>
       </div>
@@ -48,7 +48,7 @@
 
     <a class="contact-card" href="{{ site.social.github }}" target="_blank">
       <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
-      <div>
+      <div class="contact-text">
         <div class="contact-label">GitHub</div>
         <div class="contact-value">@gvavou5</div>
       </div>

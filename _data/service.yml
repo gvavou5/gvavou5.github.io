@@ -39,6 +39,8 @@ journals:
     entries:
       - label: "TACO"
         url: "https://dl.acm.org/journal/taco"
+      - label: "TOMPECS"
+        url: "https://dl.acm.org/journal/tompecs"
 
   - publisher: "IEEE"
     entries:
