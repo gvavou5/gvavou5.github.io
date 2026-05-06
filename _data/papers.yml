@@ -49,8 +49,8 @@
       organization = {IEEE}
     }
   links:
-    # - label: PDF
-    #   url: /Documents/Vavouliotis_ISCA26_Bumper.pdf
+    - label: PDF
+      url: /Documents/Bumper_ISCA26.pdf
     # - label: Slides
     #   url: /Documents/Vavouliotis_ISCA26_Bumper_slides.pdf
     # - label: Talk
@@ -73,8 +73,8 @@
       organization = {IEEE}
     }
   links:
-    # - label: PDF
-    #   url: /Documents/Vavouliotis_ISCA26_Jamet.pdf
+    - label: PDF
+      url: /Documents/IPCAT_ISCA26.pdf
     # - label: Slides
     #   url: /Documents/Vavouliotis_ISCA26_Jamet_slides.pdf
     # - label: Talk
@@ -93,7 +93,9 @@
       title     = {Context-Aware Set Dueling for Dynamic Policy Arbitration},
       journal   = {IEEE Computer Architecture Letters},
       year      = {2025},
-      publisher = {IEEE}
+      publisher = {IEEE},
+      doi       = {10.1109/LCA.2025.3617159},
+      url       = {https://ieeexplore.ieee.org/abstract/document/11193713}
     }
   links:
     - label: PDF
@@ -114,7 +116,9 @@
       title     = {Instruction-Aware Cooperative {TLB} and Cache Replacement Policies},
       booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support
                    for Programming Languages and Operating Systems (ASPLOS)},
-      year      = {2025}
+      year      = {2025},
+      doi       = {10.1145/3669940.3707247},
+      url       = {https://dl.acm.org/doi/10.1145/3669940.3707247}
     }
   links:
     - label: PDF
@@ -138,7 +142,9 @@
       title        = {To Cross, or Not to Cross Pages for Prefetching?},
       booktitle    = {2025 IEEE International Symposium on High-Performance Computer Architecture (HPCA)},
       year         = {2025},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/HPCA61900.2025.00025},
+      url          = {https://ieeexplore.ieee.org/abstract/document/10946723}
     }
   links:
     - label: PDF
@@ -162,7 +168,9 @@
                       Adaptive Prefetch Filtering},
       booktitle    = {2024 IEEE International Symposium on High-Performance Computer Architecture (HPCA)},
       year         = {2024},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/HPCA57654.2024.00046},
+      url          = {https://www.computer.org/csdl/proceedings-article/hpca/2024/931300a528/1VOAAUAW328}
     }
   links:
     - label: PDF
@@ -186,7 +194,9 @@
       title        = {Practically Tackling Memory Bottlenecks of Graph-Processing Workloads},
       booktitle    = {2024 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
       year         = {2024},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/IPDPS57955.2024.00096},
+      url          = {https://ieeexplore.ieee.org/document/10579233}
     }
   links:
     - label: PDF
@@ -206,7 +216,9 @@
                    Grot, Boris and Mueller, Rene},
       title     = {Concurrent {GCs} and Modern {Java} Workloads: {A} Cache Perspective},
       booktitle = {Proceedings of the 2023 ACM SIGPLAN International Symposium on Memory Management (ISMM)},
-      year      = {2023}
+      year      = {2023},
+      doi       = {10.1145/3591195.3595269},
+      url       = {https://dl.acm.org/doi/10.1145/3591195.3595269}
     }
   links:
     - label: PDF
@@ -232,7 +244,9 @@
       title        = {Page Size Aware Cache Prefetching},
       booktitle    = {2022 55th IEEE/ACM International Symposium on Microarchitecture (MICRO)},
       year         = {2022},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/MICRO56248.2022.00070},
+      url          = {https://ieeexplore.ieee.org/document/9923823}
     }
   links:
     - label: PDF
@@ -255,7 +269,9 @@
                    Jimenez, Daniel A. and Casas, Marc},
       title     = {Morrigan: {A} Composite Instruction {TLB} Prefetcher},
       booktitle = {Proceedings of the 54th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)},
-      year      = {2021}
+      year      = {2021},
+      doi       = {10.1145/3466752.3480049},
+      url       = {https://dl.acm.org/doi/10.1145/3466752.3480049}
     }
   links:
     - label: PDF
@@ -283,7 +299,9 @@
       title        = {Exploiting Page Table Locality for Agile {TLB} Prefetching},
       booktitle    = {2021 ACM/IEEE 48th Annual International Symposium on Computer Architecture (ISCA)},
       year         = {2021},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/ISCA52012.2021.00016},
+      url          = {https://ieeexplore.ieee.org/document/9499825}
     }
   links:
     - label: PDF
