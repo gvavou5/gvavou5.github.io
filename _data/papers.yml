@@ -32,6 +32,32 @@
 # =============================================================
 
 - year: 2026
+  venue: "MICRO'26"
+  type: conference
+  spotlight: true
+  title: "Exploiting Program Semantics for Hardware Prefetching"
+  authors: "**Georgios Vavouliotis**, Damjan Lampret, Sara Friedman, Leeor Peled."
+  venue_full: "59th IEEE/ACM International Symposium on Microarchitecture (MICRO '26)."
+  bibtex: |
+    TBD
+  links:
+    - label: PDF
+      url: "#"
+
+- year: 2026
+  venue: "MICRO'26"
+  type: conference
+  spotlight: true
+  title: "Enabling Adaptive Policy Arbitration with Context Awareness"
+  authors: "Diamantis Patsidis, Leeor Peled, **Georgios Vavouliotis**."
+  venue_full: "59th IEEE/ACM International Symposium on Microarchitecture (MICRO '26)."
+  bibtex: |
+    TBD
+  links:
+    - label: PDF
+      url: "#"
+
+- year: 2026
   venue: "ISCA'26"
   type: conference
   spotlight: true

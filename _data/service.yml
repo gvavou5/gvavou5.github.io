@@ -3,6 +3,11 @@
 # =============================================================
 
 pc:
+  - year: 2027
+    entries:
+      - label: "HPCA'27"
+        url: "https://hpca-conf.org/2027/program-committee/"
+
   - year: 2026
     entries:
       - label: "HPCA'26"

@@ -21,6 +21,15 @@
   <meta name="twitter:image"       content="{{ site.url }}{{ site.author.photo }}"/>
   <link rel="icon" href="/assets/favicon_io/favicon.ico">
 
+  <!-- Theme: set data-theme before render to prevent flash -->
+  <script>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

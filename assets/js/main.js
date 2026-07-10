@@ -2,6 +2,26 @@
    MAIN.JS — Filtering, toggles, nav active state
    ============================================================= */
 
+/* --- Theme toggle (light/dark) ---
+   Initial data-theme is set by inline script in _layouts/default.html
+   to avoid a flash on load. Here we sync icons and wire click handlers. */
+(function themeToggle() {
+  function syncIcons(theme) {
+    var cls = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    document.querySelectorAll('.theme-toggle i').forEach(function(i) { i.className = cls; });
+  }
+  syncIcons(document.documentElement.getAttribute('data-theme'));
+
+  document.querySelectorAll('.theme-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      syncIcons(next);
+    });
+  });
+})();
+
 /* --- Mobile menu --- */
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('mobileMenu').classList.toggle('open');

@@ -27,6 +27,22 @@
 
 - year: 2026
   type: paper
+  venue: "MICRO'26"
+  featured: true
+  text: >
+    <strong>Exploiting Program Semantics for Hardware Prefetching</strong>
+    accepted at <strong>MICRO 2026</strong>.
+
+- year: 2026
+  type: paper
+  venue: "MICRO'26"
+  featured: true
+  text: >
+    <strong>Enabling Adaptive Policy Arbitration with Context Awareness</strong>
+    accepted at <strong>MICRO 2026</strong>.
+
+- year: 2026
+  type: paper
   venue: "ISCA'26"
   featured: true
   text: >
