@@ -7,6 +7,7 @@
   --ink-muted:    #7a7a9a;
   --accent:       #8b0000;
   --accent-mid:   #b30000;
+  --accent-dark:  #6b0000;
   --accent-soft:  #fff0f0;
   --gold:         #c8961a;
   --gold-bg:      #fff8e1;
@@ -20,6 +21,9 @@
   --purple:       #7b1fa2;
   --purple-bg:    #f3e5f5;
   --purple-border:#d8b0e0;
+  --teal:         #006064;
+  --teal-bg:      #e0f7fa;
+  --teal-border:  #80cbc4;
   --bg:           #fafafa;
   --bg-card:      #ffffff;
   --border:       #e8e8f0;
@@ -27,6 +31,8 @@
   --radius:       8px;
   --shadow-sm:    0 2px 8px rgba(26,26,46,0.07);
   --shadow-md:    0 6px 24px rgba(26,26,46,0.10);
+  --transition:      0.18s ease;
+  --transition-slow: 0.3s ease;
   --nav-h:        60px;
   --max-w:        900px;
   --font-display: 'DM Serif Display', Georgia, serif;
@@ -48,6 +54,21 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 ::selection { background: var(--accent); color: white; }
+
+/* Keyboard focus — visible ring for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+.filter-btn:focus-visible,
+.toggle-btn:focus-visible,
+.paper-link:focus-visible,
+.paper-bibtex-copy:focus-visible,
+.theme-toggle:focus-visible,
+.back-to-top:focus-visible,
+.contact-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
 
 /* =============================================================
    NAVBAR
@@ -94,12 +115,12 @@ nav {
   background: var(--accent-soft);
   color: var(--accent);
 }
-.nav-cv {
-  font-weight: 600 !important;
-  color: white !important;
-  background: var(--accent) !important;
+.nav-links a.nav-cv {
+  font-weight: 600;
+  color: white;
+  background: var(--accent);
 }
-.nav-cv:hover { background: var(--accent-mid) !important; }
+.nav-links a.nav-cv:hover { background: var(--accent-mid); }
 .nav-count {
   display: inline-flex; align-items: center; justify-content: center;
   background: var(--accent-soft); color: var(--accent);
@@ -130,7 +151,7 @@ nav {
 .mobile-menu a {
   padding: 10px 12px; border-radius: var(--radius);
   font-weight: 500; color: var(--ink-light);
-  transition: all 0.18s;
+  transition: background var(--transition), color var(--transition);
 }
 .mobile-menu a:hover { background: var(--accent-soft); color: var(--accent); }
 
@@ -180,7 +201,7 @@ section:last-of-type { padding-bottom: 40px; }
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  box-shadow: 0 0 0 4px white, 0 0 0 6px var(--border-dark), var(--shadow-md);
+  box-shadow: 0 0 0 4px var(--bg-card), var(--shadow-md);
 }
 .about-photo-wrap .social-links {
   flex-direction: column; width: 100%; gap: 6px;
@@ -208,7 +229,7 @@ section:last-of-type { padding-bottom: 40px; }
   padding: 4px 13px; border-radius: 20px;
   background: var(--accent-soft);
   color: var(--accent);
-  border: 1px solid #f0c0c0;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
   display: inline-flex; align-items: center;
   letter-spacing: 0.01em;
 }
@@ -217,11 +238,12 @@ section:last-of-type { padding-bottom: 40px; }
 .research-tags .tag:nth-child(5n+2) { background: var(--purple-bg); color: var(--purple); border-color: var(--purple-border); }
 .research-tags .tag:nth-child(5n+3) { background: var(--green-bg);  color: var(--green);  border-color: var(--green-border); }
 .research-tags .tag:nth-child(5n+4) { background: var(--gold-bg);   color: var(--gold);   border-color: var(--gold-border); }
-.research-tags .tag:nth-child(5n+5) { background: #e0f7fa;          color: #006064;       border-color: #80cbc4; }
+.research-tags .tag:nth-child(5n+5) { background: var(--teal-bg);    color: var(--teal);   border-color: var(--teal-border); }
 .about-bio {
   font-size: 0.95rem; color: var(--ink-light);
   line-height: 1.75;
-  text-align: justify;
+  text-align: left;
+  max-width: 68ch;
 }
 .about-bio p { margin-bottom: 14px; }
 .about-bio p:last-child { margin-bottom: 0; }
@@ -236,7 +258,7 @@ section:last-of-type { padding-bottom: 40px; }
   color: var(--ink-light);
   padding: 6px 12px; border-radius: 20px;
   border: 1px solid var(--border-dark);
-  transition: all 0.18s;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 .social-link:hover {
   border-color: var(--accent); color: var(--accent);
@@ -255,7 +277,8 @@ section:last-of-type { padding-bottom: 40px; }
   padding: 5px 13px; border-radius: 20px;
   border: 1px solid var(--border-dark);
   background: transparent; color: var(--ink-light);
-  cursor: pointer; transition: all 0.18s;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
   letter-spacing: 0.02em;
 }
 .filter-btn:hover, .filter-btn.active {
@@ -272,7 +295,8 @@ section:last-of-type { padding-bottom: 40px; }
   background: none; border: 1px solid var(--border-dark);
   color: var(--ink-light); font-size: 0.83rem; font-weight: 500;
   padding: 8px 20px; border-radius: 20px;
-  cursor: pointer; transition: all 0.18s;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 .toggle-btn:hover {
   background: var(--accent-soft); border-color: var(--accent); color: var(--accent);
@@ -312,7 +336,7 @@ section:last-of-type { padding-bottom: 40px; }
 .badge-paper   { background: var(--blue-bg);   color: var(--blue);   border: 1px solid var(--blue-border); }
 .badge-service { background: var(--green-bg);  color: var(--green);  border: 1px solid var(--green-border); }
 .badge-talk    { background: var(--purple-bg); color: var(--purple); border: 1px solid var(--purple-border); }
-.badge-poster  { background: #e0f7fa;          color: #00796b;       border: 1px solid #80cbc4; }
+.badge-poster  { background: var(--teal-bg);   color: var(--teal);      border: 1px solid var(--teal-border); }
 .badge-venue   { background: var(--green-bg);  color: var(--green);     border: 1px solid var(--green-border); }
 .badge-other   { background: var(--border);    color: var(--ink-muted); border: 1px solid var(--border-dark); }
 
@@ -414,7 +438,7 @@ section:last-of-type { padding-bottom: 40px; }
   padding: 3px 9px; border-radius: 10px;
   border: 1px solid var(--border-dark);
   color: var(--accent);
-  transition: all 0.18s;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
   text-transform: uppercase; letter-spacing: 0.04em;
 }
 .paper-link:hover {
@@ -453,7 +477,7 @@ section:last-of-type { padding-bottom: 40px; }
   background: white;
   color: var(--ink-light);
   cursor: pointer;
-  transition: all 0.18s;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
 }
 .paper-bibtex-copy:hover {
   background: var(--accent-soft);
@@ -556,7 +580,7 @@ footer {
   color: var(--ink-muted); font-size: 0.8rem;
   max-width: var(--max-w); margin: 0 auto;
 }
-.footer-sub { margin-top: 3px; font-size: 0.76rem; color: #aaa; }
+.footer-sub { margin-top: 3px; font-size: 0.76rem; color: var(--ink-muted); }
 
 /* =============================================================
    VENUE CHIPS (about section)
@@ -676,15 +700,15 @@ section:target .section-header h2 {
   border: none; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
   font-size: 0.85rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  box-shadow: var(--shadow-md);
   opacity: 0; pointer-events: none;
-  transition: opacity 0.25s, transform 0.25s;
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
   transform: translateY(8px);
 }
 .back-to-top.visible {
   opacity: 1; pointer-events: auto; transform: translateY(0);
 }
-.back-to-top:hover { background: var(--accent-dark, #6b0000); }
+.back-to-top:hover { background: var(--accent-dark); }
 
 /* =============================================================
    ANIMATIONS
@@ -699,6 +723,18 @@ section { animation: fadeUp 0.45s ease both; }
 #service     { animation-delay: 0.13s; }
 #contact     { animation-delay: 0.15s; }
 
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  section { animation: none; }
+  section:target .section-header h2 { animation: none; }
+}
+
 /* =============================================================
    DARK MODE — toggled via [data-theme="dark"] on <html>
    (initial value set by inline script in _layouts/default.html
@@ -707,9 +743,10 @@ section { animation: fadeUp 0.45s ease both; }
 [data-theme="dark"] {
   --ink:           #e8e8f8;
   --ink-light:     #b0b0cc;
-  --ink-muted:     #7a7a9a;
+  --ink-muted:     #9a9ab8;
   --accent:        #e04040;
   --accent-mid:    #e85050;
+  --accent-dark:   #c83030;
   --accent-soft:   rgba(224,64,64,0.15);
   --gold:          #d4a832;
   --gold-bg:       rgba(212,168,50,0.15);
@@ -723,6 +760,9 @@ section { animation: fadeUp 0.45s ease both; }
   --purple:        #ce93d8;
   --purple-bg:     rgba(206,147,216,0.12);
   --purple-border: rgba(206,147,216,0.3);
+  --teal:          #80deea;
+  --teal-bg:       rgba(0,96,100,0.15);
+  --teal-border:   rgba(128,222,234,0.3);
   --bg:            #0f0f1a;
   --bg-card:       #1a1a2e;
   --border:        #2a2a3e;
@@ -732,6 +772,7 @@ section { animation: fadeUp 0.45s ease both; }
 }
 
 [data-theme="dark"] body { color-scheme: dark; }
+[data-theme="dark"] ::selection { background: var(--accent); color: var(--bg); }
 
 [data-theme="dark"] nav { background: rgba(15,15,26,0.92); }
 
@@ -757,7 +798,7 @@ section { animation: fadeUp 0.45s ease both; }
 [data-theme="dark"] .research-tags .tag:nth-child(5n+2) { background: rgba(206,147,216,0.12); color: #ce93d8; border-color: rgba(206,147,216,0.3); }
 [data-theme="dark"] .research-tags .tag:nth-child(5n+3) { background: rgba(102,187,106,0.12); color: #a5d6a7; border-color: rgba(165,214,167,0.3); }
 [data-theme="dark"] .research-tags .tag:nth-child(5n+4) { background: rgba(212,168,50,0.12);  color: #ffe082; border-color: rgba(255,224,130,0.3); }
-[data-theme="dark"] .research-tags .tag:nth-child(5n+5) { background: rgba(0,96,100,0.15);    color: #80deea; border-color: rgba(128,222,234,0.3); }
+/* 5n+5 (teal) is handled by the theme-aware --teal-* tokens */
 
 [data-theme="dark"] .badge-conf-asplos { background: rgba(230,81,0,0.18);   color: #ffb74d; border-color: rgba(255,183,77,0.4); }
 [data-theme="dark"] .badge-conf-hpca   { background: rgba(106,27,154,0.2);  color: #ce93d8; border-color: rgba(206,147,216,0.35); }
