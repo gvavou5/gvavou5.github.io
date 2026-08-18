@@ -32,6 +32,28 @@
 # =============================================================
 
 - year: 2026
+  venue: "IEEE CAL'26"
+  type: journal
+  spotlight: true
+  title: "Agentic LLMs for Microarchitecture Research: The Role of the Human Architect"
+  url: "https://ieeexplore.ieee.org/abstract/document/11629580"
+  authors: "**Georgios Vavouliotis**."
+  venue_full: "IEEE Computer Architecture Letters (CAL), Jul 2026."
+  bibtex: |
+    @article{vavouliotis2026agentic,
+      author    = {Vavouliotis, Georgios},
+      title     = {Agentic {LLM}s for Microarchitecture Research: The Role of the Human Architect},
+      journal   = {IEEE Computer Architecture Letters},
+      year      = {2026},
+      publisher = {IEEE},
+      doi       = {10.1109/LCA.2026.3718795},
+      url       = {https://ieeexplore.ieee.org/abstract/document/11629580}
+    }
+  links:
+    - label: PDF
+      url: /Documents/Vavouliotis_CAL26.pdf
+
+- year: 2026
   venue: "MICRO'26"
   type: conference
   spotlight: true
@@ -62,7 +84,7 @@
   type: conference
   spotlight: true
   title: "Bumper: Hinting Instruction Usefulness for Robust Unified Caches"
-  url: "#"
+  url: "https://ieeexplore.ieee.org/abstract/document/11617789"
   authors: "**Georgios Vavouliotis**, Tom Rollet, Davide Basilio Bartolini, Boris Grot, Leeor Peled, Yang Lixia."
   venue_full: "53rd ACM/IEEE International Symposium on Computer Architecture (ISCA '26)."
   bibtex: |
@@ -72,7 +94,9 @@
       title        = {Bumper: Hinting Instruction Usefulness for Robust Unified Caches},
       booktitle    = {2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)},
       year         = {2026},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/ISCA66397.2026.00145},
+      url          = {https://ieeexplore.ieee.org/abstract/document/11617789}
     }
   links:
     - label: PDF
@@ -86,7 +110,7 @@
   venue: "ISCA'26"
   type: conference
   title: "Enhancing Instruction Prefetching via Cache and TLB Management"
-  url: "#"
+  url: "https://ieeexplore.ieee.org/abstract/document/11617901"
   authors: "Alexandre Valentin Jamet, **Georgios Vavouliotis**, Martí Torrents, Dimitrios Chasapis, Marc Casas."
   venue_full: "53rd ACM/IEEE International Symposium on Computer Architecture (ISCA '26)."
   bibtex: |
@@ -96,7 +120,9 @@
       title        = {Enhancing Instruction Prefetching via Cache and {TLB} Management},
       booktitle    = {2026 ACM/IEEE 53rd Annual International Symposium on Computer Architecture (ISCA)},
       year         = {2026},
-      organization = {IEEE}
+      organization = {IEEE},
+      doi          = {10.1109/ISCA66397.2026.00159},
+      url          = {https://ieeexplore.ieee.org/abstract/document/11617901}
     }
   links:
     - label: PDF
