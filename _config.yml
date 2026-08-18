@@ -50,3 +50,13 @@ permalink: /blog/:year/:month/:day/:title
 
 plugins:
   - jekyll-sitemap
+
+# Files never copied into the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - node_modules
+  - github-token.rtf
