@@ -101,8 +101,8 @@
   links:
     - label: PDF
       url: /Documents/Bumper_ISCA26.pdf
-    # - label: Slides
-    #   url: /Documents/Vavouliotis_ISCA26_Bumper_slides.pdf
+    - label: Slides
+      url: /Documents/Bumper_ISCA26_slides.pptx
     # - label: Talk
     #   url: https://www.youtube.com/watch?v=PLACEHOLDER
 
